@@ -1,0 +1,1220 @@
+
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="ASIR 1">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../Imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Presupuesto Servidor - TipsTaBet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#construyendo-un-servidor" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="TipsTaBet" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">devices_other</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              TipsTaBet
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Presupuesto Servidor
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Fichas-tecnicas/" title="Hardware" class="md-tabs__link md-tabs__link--active">
+          Hardware
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Sistemas Operativos" class="md-tabs__link">
+          Sistemas Operativos
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Administración de redes" class="md-tabs__link">
+          Administración de redes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Lenguaje de Marcas" class="md-tabs__link">
+          Lenguaje de Marcas
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Herramientas/Easy2boot/" title="Contenido extra" class="md-tabs__link">
+          Contenido extra
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Incidencias/30-04-2019/" title="Incidencias" class="md-tabs__link">
+          Incidencias
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="TipsTaBet" class="md-nav__button md-logo">
+      
+        <i class="md-icon">devices_other</i>
+      
+    </a>
+    TipsTaBet
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Fichas-tecnicas/" title="Fichas técnicas" class="md-nav__link">
+      Fichas técnicas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Rockstor/" title="Rockstor" class="md-nav__link">
+      Rockstor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Raspberry-Pi/" title="Raspberry Pi" class="md-nav__link">
+      Raspberry Pi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Presupuesto Servidor
+      </label>
+    
+    <a href="./" title="Presupuesto Servidor" class="md-nav__link md-nav__link--active">
+      Presupuesto Servidor
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#placa-base" title="Placa Base" class="md-nav__link">
+    Placa Base
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesador" title="Procesador" class="md-nav__link">
+    Procesador
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoria-ram" title="Memoria RAM" class="md-nav__link">
+    Memoria RAM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#almacenamiento" title="Almacenamiento" class="md-nav__link">
+    Almacenamiento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuente-de-alimentacion" title="Fuente de alimentación" class="md-nav__link">
+    Fuente de alimentación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caja" title="Caja" class="md-nav__link">
+    Caja
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saiups" title="SAI/UPS" class="md-nav__link">
+    SAI/UPS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presupuesto-total" title="Presupuesto Total" class="md-nav__link">
+    Presupuesto Total
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" title="Fuentes" class="md-nav__link">
+    Fuentes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Log/" title="Control de acceso" class="md-nav__link">
+      Control de acceso
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Proyecto-Celulosa/" title="Proyecto Celulosa" class="md-nav__link">
+      Proyecto Celulosa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Sistemas Operativos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Sistemas Operativos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Comandos de Administración" class="md-nav__link">
+      Comandos de Administración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Punto-de-Restauracion/" title="Punto de restauración" class="md-nav__link">
+      Punto de restauración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Imagenes-del-Sistema/" title="Imagen del Sistema" class="md-nav__link">
+      Imagen del Sistema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Acceso-Remoto/" title="Acceso Remoto" class="md-nav__link">
+      Acceso Remoto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Dominio-linux/" title="Unir Linux a Windows Server" class="md-nav__link">
+      Unir Linux a Windows Server
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Administración de redes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Administración de redes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Planificación de la red" class="md-nav__link">
+      Planificación de la red
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Lenguaje de Marcas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Lenguaje de Marcas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Servidor Web" class="md-nav__link">
+      Servidor Web
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/MkDocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contenido extra
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contenido extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Easy2boot/" title="Easy2boot" class="md-nav__link">
+      Easy2boot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Rclone/" title="Rclone" class="md-nav__link">
+      Rclone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Github/" title="GitHub Deployment" class="md-nav__link">
+      GitHub Deployment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Incidencias
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Incidencias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Incidencias/30-04-2019/" title="Restaurar contraseña WS" class="md-nav__link">
+      Restaurar contraseña WS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#placa-base" title="Placa Base" class="md-nav__link">
+    Placa Base
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesador" title="Procesador" class="md-nav__link">
+    Procesador
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoria-ram" title="Memoria RAM" class="md-nav__link">
+    Memoria RAM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#almacenamiento" title="Almacenamiento" class="md-nav__link">
+    Almacenamiento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuente-de-alimentacion" title="Fuente de alimentación" class="md-nav__link">
+    Fuente de alimentación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caja" title="Caja" class="md-nav__link">
+    Caja
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saiups" title="SAI/UPS" class="md-nav__link">
+    SAI/UPS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presupuesto-total" title="Presupuesto Total" class="md-nav__link">
+    Presupuesto Total
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" title="Fuentes" class="md-nav__link">
+    Fuentes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/tzinm/Tipstabet/edit/master/docs/Hardware/Servidor.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="construyendo-un-servidor">Construyendo un servidor<a class="headerlink" href="#construyendo-un-servidor" title="Permanent link">#</a></h1>
+<h2 id="placa-base">Placa Base<a class="headerlink" href="#placa-base" title="Permanent link">#</a></h2>
+<p>La placa base es una de las partes fundamentales entre otras cosas porque es lo que interconectará todo y además nos dimensionará el tamaño del servidor o pc que vayamos a montar. y a partir de esta podremos elegir el resto de componentes.</p>
+<p>Buscamos una placa con factor de forma Mini ITX para disponer de un servidor de un tamaño ajustado, y además que cuente con CPU integrada de bajo consumo preferiblemente con refrigeración pasiva, de ese modo evitaremos tener que poner ventilación extra y disminuiremos el ruido. Teniendo en cuenta esto, hemos optado por una placa base de la marca <a href="https://es.wikipedia.org/wiki/Supermicro">Supermicro</a>, ya que es una empresa orientada a la fabricación de componentes para servidores con muchos años de experiencia.</p>
+<p>El modelo de placa base escogida es la <a href="https://www.supermicro.com/products/motherboard/Xeon/D/X11SDV-8C-TLN2F.cfm">Supermicro X11SDV-8C.TLN2F-O</a>, en la siguiente tabla se recogen las características más destacadas:</p>
+<table>
+<thead>
+<tr>
+<th>CARACTERÍSTICAS</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Factor de forma</td>
+<td>Mini-ITX</td>
+</tr>
+<tr>
+<td>Procesador</td>
+<td>Intel Xeon D-2141I (8 nucleos, 16 hilos)</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>DDR4 hasta 256GB (compatible con memoria ECC Y RDIMM)</td>
+</tr>
+<tr>
+<td>SATA</td>
+<td>SATA III 4</td>
+</tr>
+<tr>
+<td>RAIDs compatibles</td>
+<td>0,1,5 y 10</td>
+</tr>
+<tr>
+<td>LAN</td>
+<td>2 puerto 10Gb + 1 puerto <a href="https://www.ibm.com/support/knowledgecenter/es/POWER9/p9eih/p9eih_ipmi_overview.htm">IPMI</a></td>
+</tr>
+<tr>
+<td>Ranuras de expansión</td>
+<td>1 PCI-E 3.0 x 8  + 1PCI-E x 4 via <a href="https://blog.fosketts.net/2017/06/22/what-is-oculink/">OCuLink</a></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Supermicro placa base" src="../../Imagenes/Presupuesto-servidor/supermicro.png" title="Supermicro placa base" /></p>
+<h2 id="procesador">Procesador<a class="headerlink" href="#procesador" title="Permanent link">#</a></h2>
+<p>El corazón de todo equipo lo encontramos en el procesador. Como hemos visto en la sección anterior, la placa base escogida viene con un procesador incorporado, en este caso es el <a href="https://ark.intel.com/content/www/es/es/ark/products/136430/intel-xeon-d-2141i-processor-11m-cache-2-20-ghz.html">Intel Xeon D-2141I</a> perteneciente a la familia <strong>D</strong>, orientados al bajo consumo. Es un procesador reciente, su fecha de lanzamiento fue el primer trimestre del 2018.</p>
+<p>Las características más destacadas que podemos obtener de la web oficial de Intel son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>CARACTERÍSTICAS</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Núcleos</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hilos</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Frecuencia base</td>
+<td>2,20 GHz</td>
+</tr>
+<tr>
+<td>Frecuencia turbo</td>
+<td>3,00 GHz</td>
+</tr>
+<tr>
+<td>Caché</td>
+<td>11 MB</td>
+</tr>
+<tr>
+<td>TDP</td>
+<td>65W</td>
+</tr>
+</tbody>
+</table>
+<h2 id="memoria-ram">Memoria RAM<a class="headerlink" href="#memoria-ram" title="Permanent link">#</a></h2>
+<p>La placa base elegida dispone de 4 ranuras para la memoria RAM, por lo tanto aprovecharemos todas las ranuras, insertando 4 módulos de 8GB cada uno, quedando un total de 32GB de memoria RAM.</p>
+<p>La memoria elegida son unos módulos de <a href="https://www.senetic.es/product/A8526300">Dell DDR4</a> a una frecuencia de 2133 MHz, que es la velocidad soportada por la placa base. Además estos módulos son <strong>ECC</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, que son módulos orientados a sistemas profesionales como servidores. </p>
+<h2 id="almacenamiento">Almacenamiento<a class="headerlink" href="#almacenamiento" title="Permanent link">#</a></h2>
+<p>La placa base nos marca el número de unidades de almacenamiento máximo del que podremos disponer. En este caso para el almacenamiento dispondremos de lo siguiente:</p>
+<ul>
+<li>NVMe: para el Sistema Operativo vía OCuLink.</li>
+<li>HDD 2,5": para el almacenamiento masivo de datos.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">DISCO</th>
+<th align="center">Nº Unidades</th>
+<th align="center">RAID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">NVMe</td>
+<td align="center">1 - 250 GB</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">HDD</td>
+<td align="center">4 - 4 TB</td>
+<td align="center">RAID 1+0</td>
+</tr>
+</tbody>
+</table>
+<p>Para el almacenamiento de datos hemos elegido RAID 10 que como hemos podido ver en las especificaciones de la placa base es totalmente compatible. Esto nos proporciona mayor velocidad de lectura y escritura, y además contamos con la tolerancia a fallos.</p>
+<p>En la siguiente captura se puede observar de manera lógica como se comporta un RAID 10.</p>
+<p><img alt="RAID 10" src="../../Imagenes/Presupuesto-servidor/raid10.png" title="RAID 10" /></p>
+<h2 id="fuente-de-alimentacion">Fuente de alimentación<a class="headerlink" href="#fuente-de-alimentacion" title="Permanent link">#</a></h2>
+<p>Estamos montando un servidor de tamaño reducido, por lo que debemos escoger una fuente de alimentación acorde, para ello existen las fuentes SFX<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>El consumo de nuestro equipo no será muy elevado teniendo en cuenta que el procesador será el componente de mayor consumo, y este cuenta con un TDP de 65W, y tal y como hemos mencionado, pertenece a la gama D de Intel Xeon, que son los procesadores de bajo consumo.</p>
+<p>La fuente escogida es la <a href="https://www.alternate.es/Corsair/SF450-unidad-de-fuente-de-alimentaci%C3%B3n-450-W-SFX-Negro-Fuente-de-alimentaci%C3%B3n-de-PC/html/product/1262334?event=search">Corsair SF450</a> de 450W de potencia. Es una fuente modular con lo cual nos facilitará la gestión del cableado, importante a tener en cuenta en la elección del siguiente componente, la caja.</p>
+<p><img alt="Fuente de alimentación" src="../../Imagenes/Presupuesto-servidor/fuente-alimentacion.png" title="Fuente de alimentación" /></p>
+<h2 id="caja">Caja<a class="headerlink" href="#caja" title="Permanent link">#</a></h2>
+<p>Llegamos al último componente que necesitamos para terminar con el montaje de nuestro servidor, la caja. Acorde al tamaño del resto de componentes, la caja ha escoger será compacta, que no ocupe demasiado pero que tenga espacio suficiente para albergar todos los discos y para una posible ampliación.</p>
+<p>La caja elegida es la <a href="https://www.silverstonetek.com/product.php?pid=668">SilverStone SST-CS280B</a> ya que cumple con todos nuestro requisitos. Las características más destacables son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>CARACTERÍSTICAS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Placas base Mini-DTX/Mini-ITX</td>
+</tr>
+<tr>
+<td>Fuente de alimentación SFX</td>
+</tr>
+<tr>
+<td>Capacidad 8 discos duros 2,5"</td>
+</tr>
+<tr>
+<td>Función SATA <a href="https://es.wikipedia.org/wiki/Cambio_en_caliente">Hot-Swap</a></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Silverstone" src="../../Imagenes/Presupuesto-servidor/caja-silverstone.png" title="Caja Silverstone" /></p>
+<h2 id="saiups">SAI/UPS<a class="headerlink" href="#saiups" title="Permanent link">#</a></h2>
+<p>El servidor es una parte crítica del sistema informático por lo que es importante que ante cualquier problema en la red eléctrica, el servidor no se vea afectado y en consecuencia los discos, donde se encuentran almacenados los datos que no queremos perder.</p>
+<p>Para evitar esto disponemos en el mercado de una solución, que son los dispositivos de alimentación ininterrumpida. Existen varias clases de SAI, offline, interactivo y online. Hemos optado por la solución <strong>online</strong>, es la alternativa menos económica pero la más completa de todas. La principal diferencia que encontramos en los SAI de tipo online con respecto a los demás, es que la energía eléctrica la suministra directamente desde sus baterías a los dispositivos que están directamente conectados.</p>
+<p>Por otro lado, a la hora de elegir el SAI es necesario saber que dispositivos electrónicos conectaremos, y que consumo en <strong>vatios</strong> generarán. La unidad de medida que utilizan los SAIs es la <strong>"potencia aparente"</strong> que se mide en <strong>Va</strong><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. Para hacer la equivalencia se utiliza el <strong>factor de potencia</strong> que dependiendo del tipo de SAI ronde entorno al 70-90%. Es una practica habitual por parte de los fabricantes incluir una equivalencia entre los Va y los W del SAI.</p>
+<p>En el momento de escoger el SAI adecuado, es necesario incrementar un 20% la potencia real de todos los dispositivos conectados (en nuestro caso únicamente tendremos conectado el servidor), para que las baterías puedan suministrar energía durante un mínimo de tiempo para que los dispositivos puedan ser apagados correctamente.</p>
+<p>Únicamente conectaremos el servidor al SAI, el consumo aproximado del mismo a plena carga no superará los 300W. Realizando el cálculo teniendo en cuenta el factor de potencia, con un SAI de 1000Va será suficiente para mantenerlo 15 minutos encendido.</p>
+<p>El modelo elegido es el <a href="https://www.salicru.com/sais/slc-twin-pro2.html">SLC TWIN PRO2</a> de la marca Salicru. Entre sus características destaca que cuenta con su propio <strong>software de monitorización</strong> para las diferentes plataformas (Windows, Linux y MacOS). Además cuenta con una <strong>pantalla LCD</strong> que permite ver rápidamente el estado del SAI.</p>
+<p><img alt="SAI Salicru" src="../../Imagenes/Presupuesto-servidor/salicru.png" title="SAI Salicru" /></p>
+<h2 id="presupuesto-total">Presupuesto Total<a class="headerlink" href="#presupuesto-total" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th align="center">COMPONENTES</th>
+<th align="center">PRECIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Placa Base + procesador</td>
+<td align="center"><a href="https://www.senetic.es/product/MBD-X11SDV-8C-TLN2F-O">867,15€</a></td>
+</tr>
+<tr>
+<td align="center">Memoria RAM</td>
+<td align="center"><a href="https://www.senetic.es/product/A8526300">597,80€</a></td>
+</tr>
+<tr>
+<td align="center">Almacenamiento</td>
+<td align="center"><a href="https://www.alternate.es/Seagate/Barracuda-ST4000LM024-disco-duro-interno-2-Zoll-4000-GB-Serial-ATA-III-Unidad-de-disco-duro/html/product/1331368?event=search">651,60€</a> + <a href="https://www.senetic.es/product/V3K66AA">223,00€</a></td>
+</tr>
+<tr>
+<td align="center">Fuente de alimentación</td>
+<td align="center"><a href="https://www.alternate.es/html/product/1262334">88,90€</a></td>
+</tr>
+<tr>
+<td align="center">Caja</td>
+<td align="center"><a href="https://www.alternate.es/SilverStone/SST-CS280B-carcasa-de-ordenador-Negro-Caja-de-sobremesa/html/product/1305905?event=search">177,90€</a></td>
+</tr>
+<tr>
+<td align="center">SAI</td>
+<td align="center"><a href="https://www.pccomponentes.com/salicru-slc-twin-pro-2-1000va-schuko-sai">359€</a></td>
+</tr>
+<tr>
+<td align="center"><strong>TOTAL</strong></td>
+<td align="center"><strong>2965,35€</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los precios de la tabla han sido consultados a fecha 26/05/2019.</p>
+</div>
+<h2 id="fuentes">Fuentes<a class="headerlink" href="#fuentes" title="Permanent link">#</a></h2>
+<p><a href="https://www.dns-system.es/que_es_un_sai.php">Tipos de SAIs</a></p>
+<p><a href="https://www.apc.com/shop/es/es/tools/ups_selector/">Selector de SAI APC</a></p>
+<p><a href="https://blog.briancmoses.com/2017/03/diy-nas-2017-edition.html">DIY NAS 2017</a></p>
+<p><a href="https://ramsdenj.com/2016/01/01/freenas-server-build.html">FreeNAS Home Server</a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Error Correcting Code&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Small Factor Form&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Voltiamperio&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Raspberry-Pi/" title="Raspberry Pi" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Raspberry Pi
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Log/" title="Control de acceso" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Control de acceso
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 ASIR 1
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/tzinm" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/tzinm1" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

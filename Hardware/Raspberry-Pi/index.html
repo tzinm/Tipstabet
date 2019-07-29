@@ -1,0 +1,1181 @@
+
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="ASIR 1">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../Imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Raspberry Pi - TipsTaBet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#raspberry-pi" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="TipsTaBet" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">devices_other</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              TipsTaBet
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Raspberry Pi
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Fichas-tecnicas/" title="Hardware" class="md-tabs__link md-tabs__link--active">
+          Hardware
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Sistemas Operativos" class="md-tabs__link">
+          Sistemas Operativos
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Administración de redes" class="md-tabs__link">
+          Administración de redes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Lenguaje de Marcas" class="md-tabs__link">
+          Lenguaje de Marcas
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Herramientas/Easy2boot/" title="Contenido extra" class="md-tabs__link">
+          Contenido extra
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Incidencias/30-04-2019/" title="Incidencias" class="md-tabs__link">
+          Incidencias
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="TipsTaBet" class="md-nav__button md-logo">
+      
+        <i class="md-icon">devices_other</i>
+      
+    </a>
+    TipsTaBet
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Fichas-tecnicas/" title="Fichas técnicas" class="md-nav__link">
+      Fichas técnicas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Rockstor/" title="Rockstor" class="md-nav__link">
+      Rockstor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Raspberry Pi
+      </label>
+    
+    <a href="./" title="Raspberry Pi" class="md-nav__link md-nav__link--active">
+      Raspberry Pi
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparacion" title="Preparación" class="md-nav__link">
+    Preparación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-centos" title="Configuración de CentOS" class="md-nav__link">
+    Configuración de CentOS
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expandir-particion-root" title="Expandir partición root" class="md-nav__link">
+    Expandir partición root
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshabilitar-selinux" title="Deshabilitar selinux:" class="md-nav__link">
+    Deshabilitar selinux:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-de-red" title="Configuración de red" class="md-nav__link">
+    Configuración de red
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-rasbperry-pi" title="Actualizar Rasbperry Pi" class="md-nav__link">
+    Actualizar Rasbperry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-la-raspberry-pi" title="Conexión con la Raspberry Pi" class="md-nav__link">
+    Conexión con la Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall" title="Firewall" class="md-nav__link">
+    Firewall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copia-de-seguridad" title="Copia de seguridad" class="md-nav__link">
+    Copia de seguridad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" title="Fuentes" class="md-nav__link">
+    Fuentes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Servidor/" title="Presupuesto Servidor" class="md-nav__link">
+      Presupuesto Servidor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Log/" title="Control de acceso" class="md-nav__link">
+      Control de acceso
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Proyecto-Celulosa/" title="Proyecto Celulosa" class="md-nav__link">
+      Proyecto Celulosa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Sistemas Operativos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Sistemas Operativos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Comandos de Administración" class="md-nav__link">
+      Comandos de Administración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Punto-de-Restauracion/" title="Punto de restauración" class="md-nav__link">
+      Punto de restauración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Imagenes-del-Sistema/" title="Imagen del Sistema" class="md-nav__link">
+      Imagen del Sistema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Acceso-Remoto/" title="Acceso Remoto" class="md-nav__link">
+      Acceso Remoto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Dominio-linux/" title="Unir Linux a Windows Server" class="md-nav__link">
+      Unir Linux a Windows Server
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Administración de redes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Administración de redes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Planificación de la red" class="md-nav__link">
+      Planificación de la red
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Lenguaje de Marcas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Lenguaje de Marcas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Servidor Web" class="md-nav__link">
+      Servidor Web
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/MkDocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contenido extra
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contenido extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Easy2boot/" title="Easy2boot" class="md-nav__link">
+      Easy2boot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Rclone/" title="Rclone" class="md-nav__link">
+      Rclone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Github/" title="GitHub Deployment" class="md-nav__link">
+      GitHub Deployment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Incidencias
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Incidencias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Incidencias/30-04-2019/" title="Restaurar contraseña WS" class="md-nav__link">
+      Restaurar contraseña WS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparacion" title="Preparación" class="md-nav__link">
+    Preparación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-centos" title="Configuración de CentOS" class="md-nav__link">
+    Configuración de CentOS
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expandir-particion-root" title="Expandir partición root" class="md-nav__link">
+    Expandir partición root
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshabilitar-selinux" title="Deshabilitar selinux:" class="md-nav__link">
+    Deshabilitar selinux:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-de-red" title="Configuración de red" class="md-nav__link">
+    Configuración de red
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-rasbperry-pi" title="Actualizar Rasbperry Pi" class="md-nav__link">
+    Actualizar Rasbperry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conexion-con-la-raspberry-pi" title="Conexión con la Raspberry Pi" class="md-nav__link">
+    Conexión con la Raspberry Pi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall" title="Firewall" class="md-nav__link">
+    Firewall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copia-de-seguridad" title="Copia de seguridad" class="md-nav__link">
+    Copia de seguridad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes" title="Fuentes" class="md-nav__link">
+    Fuentes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/tzinm/Tipstabet/edit/master/docs/Hardware/Raspberry-Pi.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="raspberry-pi">Raspberry Pi<a class="headerlink" href="#raspberry-pi" title="Permanent link">#</a></h1>
+<h2 id="preparacion">Preparación<a class="headerlink" href="#preparacion" title="Permanent link">#</a></h2>
+<p>Para poder hacer uso de una Raspberry Pi como si de un ordenador se tratase, necesitamos </p>
+<p>instalar un Sistema Operativo en una tarjeta MicroSD.</p>
+<p><strong>¿Cómo ser realiza esto?</strong></p>
+<p>Necesitamos conectar una tarjeta MicroSD a un ordenador, para ello probablemente será necesario un lector de tarjetas con conexión USB (en caso de que tu equipo tenga lector de tarjetas no lo necesitarás), un dispositivo como <a href="https://www.amazon.es/UGREEN-Tarjetas-Velocidad-Portatil-simult%C3%A1nea/dp/B0779V61XB/ref=sr_1_10?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;keywords=lector+de+tarjetas+sd&amp;qid=1557599567&amp;s=gateway&amp;sr=8-10">este</a>.</p>
+<p><img alt="Lector de tarjetas" src="../../Imagenes/Raspberry_Pi/Lector_tarjetas.jpg" /></p>
+<p>Una vez que tenemos la tarjeta MicroSD y el lector de tarjetas, procedemos a realizar la instalación del Sistema Operativo que deseemos. En nuestro caso hemos seleccionado <strong>CentOS</strong>, de la familia <strong>Red Hat</strong>, puesto que es el que hemos estudiado durante el curso.</p>
+<p>El microprocesador con el que cuenta la Raspberry Pi 3b es de la familia <strong>ARM</strong> con arquitectura de <strong>64 bits</strong>. Esto es necesario tenerlo en cuenta a la hora de seleccionar la imagen correcta. </p>
+<p>Teniendo en cuenta esto, acudiremos a la web oficial del Sistema Operativo que vayamos a instalar, y buscaremos la imagen compatible, que habitualmente está renombrada con el nombre del dispositivo, es decir, <em><strong>imagen para Raspberry pi 3</strong></em>.</p>
+<p>Después de navegar por la web de CentOS hemos encontrado el <a href="http://isoredirect.centos.org/altarch/7/isos/armhfp/CentOS-Userland-7-armv7hl-RaspberryPI-Minimal-1810-sda.raw.xz">repositorio</a> donde se encuentran las imágenes compatibles. A pesar de que la Raspberry Pi 3 cuenta con la arquitectura de 64 bits, por el momento CentOS cuenta únicamente con una versión de <strong>32 bits</strong> que es <strong>compatible</strong> con la Raspberry Pi 3.</p>
+<p>Una vez que tenemos la imagen descargada en nuestro equipo, procedemos a instalarla en la tarjeta MicroSD, para ello utilizaremos un programa muy sencillo y que funciona muy bien, <a href="https://www.balena.io/etcher/">balenaEtcher</a>.</p>
+<p><img alt="Balena Etcher" src="../../Imagenes/Raspberry_Pi/Balena_etcher.png" /></p>
+<p>El proceso durará aproximadamente 5 minutos, una vez que haya terminado ya tendremos preparada la tarjeta MicroSD para introducirla en la Raspberry y empezar a trabajar sobre ella.</p>
+<h2 id="configuracion-de-centos">Configuración de CentOS<a class="headerlink" href="#configuracion-de-centos" title="Permanent link">#</a></h2>
+<h3 id="expandir-particion-root">Expandir partición root<a class="headerlink" href="#expandir-particion-root" title="Permanent link">#</a></h3>
+<p>Vamos a comprobar las particiones que nos crea el Sistema Operativo una vez instalado con el comando <code>lsblk</code>, y como podremos comprobar en la siguiente imagen, la mayor parte del espacio de la tarjeta MicroSD no se está aprovechando.</p>
+<p><img alt="Comando lsblk" src="../../Imagenes/Raspberry_Pi/lsblk.png" /></p>
+<p>Debemos expandir la partición correspondiente a root (<strong>/</strong>), la que aparece marcada en la imagen anterior. Siguiendo las instrucciones que aparecen en la <a href="https://wiki.centos.org/SpecialInterestGroup/AltArch/armhfp#head-bc44c21856f2c9f01844f24caa063221285256bc">wiki de CentOS</a>, debemos ejecutar el siguiente comando:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/usr/bin/rootfs-expand
+</pre></div>
+</td></tr></table>
+
+<p><img alt="Sistema expandido" src="../../Imagenes/Raspberry_Pi/lsblk_expandido.png" /></p>
+<h3 id="deshabilitar-selinux">Deshabilitar selinux:<a class="headerlink" href="#deshabilitar-selinux" title="Permanent link">#</a></h3>
+<p>Es un módulo de seguridad que viene incluido en el Kernel de Linux. Durante el tiempo que hemos estado realizando pruebas nos ha dado bastantes problemas con el servidor web, con lo que hemos decidido deshabilitarlo. Para el control de seguridad haremos uso de la herramienta <strong>Firewalld</strong>.</p>
+<p>Para deshabilitarlos debemos abrir el fichero <code>/etc/sysconfig/selinux</code> con cualquier editor de texto que tengamos instalado (por defecto viene instalado el editor <strong>vi</strong>).</p>
+<p><img alt="Selinux" src="../../Imagenes/Raspberry_Pi/Selinux.png" /></p>
+<p>Se ha modificado la línea que está marcada en rojo en la captura superior, ha pasado de enforcing a <strong>disabled</strong>. Para que los cambios resulten efectivos es necesario el reinicio completo de la Raspberry ejecutando el comando <code>reboot</code>. Esto es debido a que este modulo como hemos comentado es parte del kernel del sistema. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>No se recomiendo deshabilitar el módulo Selinux. En este caso se trata de un entorno de pruebas, por lo que para que resulte más sencillo la puesta en marcha de varios servicios se ha procedido a deshabilitarlo.</p>
+</div>
+<h3 id="configuracion-de-red">Configuración de red<a class="headerlink" href="#configuracion-de-red" title="Permanent link">#</a></h3>
+<p>Si tenemos un servidor <strong>DHCP</strong> en nuestra red local, este le asignará una dirección ip disponible a la Raspberry Pi. Para consultar la dirección ip que tiene nuestra Raspberry Pi debemos ejecutar <code>ip addr</code>.</p>
+<p><img alt="Comando ip addr" src="../../Imagenes/Raspberry_Pi/ip_addr.png" /></p>
+<p>Además con este comando podemos identificar el nombre que asigna el sistema a nuestra interfaz física.</p>
+<p>Las tareas que realizaremos durante el curso con la Raspberry Pi nos obligarán a conectarnos constantemente a ella, por lo tanto sería recomendable disponer de una dirección ip que no cambie continuamente. </p>
+<p>Para ello vamos a asignarle una dirección ip disponible de forma manual para que sea estática. Modificaremos el fichero <code>/etc/sysconfig/network-scripts/ifcfg-eth0</code>, donde la última parte del nombre del fichero debe corresponder al nombre de la interfaz física.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">DEVICE</span><span class="o">=</span>eht0
+<span class="nv">BOOTPROTO</span><span class="o">=</span>static
+<span class="nv">ONBOOT</span><span class="o">=</span>yes
+<span class="nv">IPADDR</span><span class="o">=</span><span class="m">192</span>.168.1.199
+<span class="nv">NETMASK</span><span class="o">=</span><span class="m">255</span>.255.255.0
+<span class="nv">GATEWAY</span><span class="o">=</span><span class="m">192</span>.168.1.254
+<span class="nv">DNS1</span><span class="o">=</span><span class="m">192</span>.168.1.254
+<span class="nv">DNS2</span><span class="o">=</span><span class="m">1</span>.1.1.1
+</pre></div>
+</td></tr></table>
+
+<h2 id="actualizar-rasbperry-pi">Actualizar Rasbperry Pi<a class="headerlink" href="#actualizar-rasbperry-pi" title="Permanent link">#</a></h2>
+<p>Actualizaremos todos los paquetes disponibles, para ello ejecutaremos el siguiente comando:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>yum update
+</pre></div>
+</td></tr></table>
+
+<h2 id="conexion-con-la-raspberry-pi">Conexión con la Raspberry Pi<a class="headerlink" href="#conexion-con-la-raspberry-pi" title="Permanent link">#</a></h2>
+<p>Para trabajar de una forma más cómoda con la Rasperry Pi nos conectaremos remotamente, para ello utilizaremos el servidor OpenSSH. En la imagen de CentOS viene por defecto activado, pero lo comprobaremos ejecutando <code>systemctl status sshd</code>.</p>
+<p><img alt="Servidor ssh" src="../../Imagenes/Raspberry_Pi/Servidor_ssh.png" /></p>
+<p>Como vemos, el servidor está activo con lo que para conectarnos remotamente podremos utilizar cualquier cliente ssh. Para Windows disponemos de varias herramientas como <a href="https://mobaxterm.mobatek.net/">MobaXterm</a> y <a href="https://www.putty.org/">Putty</a> entre otras, y para sistemas como Linux o MacOS podremos utilizar la propia terminal.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#usuario@dirección_ip_máquina_remota</span>
+ssh root@192.168.1.199
+</pre></div>
+</td></tr></table>
+
+<p>No hemos realizado ninguna modificación en el fichero de configuración <code>sshd_config</code> del servidor ssh. Para ampliar más información sobre la securización del servidor acudir a este  <a href="https://www.ssh.com/ssh/sshd_config/">enlace</a>.</p>
+<h2 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">#</a></h2>
+<p><strong>FirewallD</strong> es un frontend de iptables, en las últimas versiones de CentOS reemplaza a iptables como herramienta de control de firewall por defecto. El funcionamiento es diferente puesto que FirewallD se basa en el concepto de zonas y servicios en lugar de cadenas y reglas.</p>
+<p>Las zonas hacen referencia a un conjunto de reglas predeterminadas que en función de la zona seleccionada se aplican diferentes niveles de seguridad, se permite o bloquea diferente tipo de tráfico. Cuando activamos FirewallD se establece la zona <strong>pública</strong> como zona predeterminada.</p>
+<p>El comando utilizado para la administración es <code>firewall-cmd</code>. Comandos que nos resultarán interesantes:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#Verificar el estado del firewall</span>
+sudo firewall-cmd --state
+
+<span class="c1">#Verificar la zona por defecto del firewall</span>
+sudo firewall-cmd --get-default-zone
+
+<span class="c1">#Listar todas las zonas disponibles</span>
+sudo firewall-cmd --get-zones
+
+<span class="c1">#Comprobar que zonas está utilizando nuestra interfaz</span>
+sudo firewall-cmd --get-active-zones
+
+<span class="c1">#Mostrar la configuración de una zona</span>
+sudo firewall-cmd --zone<span class="o">=</span>public --list-all
+
+<span class="c1">#Cambiar la zona a una interfaz, con el siguiente comando asignamos la interfaz &quot;eth0&quot; a la zona &quot;work&quot;</span>
+sudo firewall-cmd --zone<span class="o">=</span>work --change-interface<span class="o">=</span>eht0
+</pre></div>
+</td></tr></table>
+
+<p>Cuando realizamos cambios en firewalld, si queremos que estos cambios sean persistentes es necesario hacer uso del flag <code>--permanent</code> , si no únicamente se mantendrán durante la sesión actual. Estos cambios no afectan al sistema en ejecución por lo que será necesario recargar el servicio con un comando específico.</p>
+<p>Sabemos que en posteriores sesiones montaremos varios servidores web, por lo tanto configuraremos el firewall para que acepte peticiones <strong>http</strong> y <strong>https</strong>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#Habilitamos el servicio &quot;http&quot; en la zona &quot;pública&quot;, y además lo hacemos persistente.</span>
+firewall-cmd --zone<span class="o">=</span>public --permanent --add-service<span class="o">=</span>http
+
+<span class="c1">#Igual que el comando anterior pero para el servicio &quot;https&quot;.</span>
+firewall-cmd --zone<span class="o">=</span>public --permanent --add-service<span class="o">=</span>https
+
+<span class="c1">#Reiniciamos el servicio.</span>
+firewall-cmd --reload
+</pre></div>
+</td></tr></table>
+
+<h2 id="copia-de-seguridad">Copia de seguridad<a class="headerlink" href="#copia-de-seguridad" title="Permanent link">#</a></h2>
+<p>Una vez que tenemos configurada la Rasperry Pi es importante realizar un bakcup, ya que es muy habitual que la tarjetas MicroSD utilizadas en estos dispositivos dejen de funcionar.</p>
+<p>Puesto que estamos trabajando con un equipo Windows, vamos utilizar la herramienta <a href="https://sourceforge.net/projects/win32diskimager/files/latest/download">Win32DiskImager</a> para crear una imagen de la tarjeta MicroSD de nuestra Raspberry Pi.</p>
+<p>El funcionamiento de esta aplicación es muy sencillo, una vez abierto el programa debemos seleccionar el directorio donde queremos guardar la imagen y el dispositivo origen de la misma (en este caso será la Raspberry Pi que Windows la ha montado en la unidad F:\).</p>
+<p>Seleccionaremos la opción <strong>Read Only Allocated Partitions</strong> en caso de que no se haya seleccionado automáticamente, y pulsaremos <strong>Read</strong>.</p>
+<p><img alt="Win32DiskImager" src="../../Imagenes/Raspberry_Pi/win32diskimager.png" /></p>
+<h2 id="fuentes">Fuentes<a class="headerlink" href="#fuentes" title="Permanent link">#</a></h2>
+<p><a href="https://wiki.centos.org/SpecialInterestGroup/AltArch/Arm32/RaspberryPi3">CentOS Linux on the Raspberry Pi 3</a></p>
+<p><a href="https://wiki.centos.org/SpecialInterestGroup/AltArch/armhfp">Special Interest Group - Armhfp</a></p>
+<p><a href="https://www.unix.com/man-page/centos/1/firewall-cmd/">Man page for firewall-cmd</a></p>
+<p><a href="https://docs.bluehosting.cl/tutoriales/servidores/introduccion-a-firewalld-en-centos.html">Introducción a FirewallD en CentOS</a></p>
+<p><a href="https://linuxize.com/post/how-to-setup-a-firewall-with-firewalld-on-centos-7/">How to set up a Firewall with FirewallD on CentOS 7</a></p>
+<p><a href="https://firewalld.org/">Firewalld.org</a></p>
+<p><a href="https://github.com/rharmonson/richtech/wiki/Using-CentOS-7.2.1511-Minimal-on-the-Raspberry-PI-3">Using CentOS 7 Minimal</a></p>
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Rockstor/" title="Rockstor" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Rockstor
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Servidor/" title="Presupuesto Servidor" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Presupuesto Servidor
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 ASIR 1
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/tzinm" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/tzinm1" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

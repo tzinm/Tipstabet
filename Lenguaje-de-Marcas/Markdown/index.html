@@ -1,0 +1,1333 @@
+
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="ASIR 1">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../Imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Markdown - TipsTaBet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#sintaxis-markdown" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="TipsTaBet" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">devices_other</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              TipsTaBet
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Markdown
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Hardware/Fichas-tecnicas/" title="Hardware" class="md-tabs__link">
+          Hardware
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Sistemas Operativos" class="md-tabs__link">
+          Sistemas Operativos
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Administración de redes" class="md-tabs__link">
+          Administración de redes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Tipstabet/" title="Lenguaje de Marcas" class="md-tabs__link md-tabs__link--active">
+          Lenguaje de Marcas
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Herramientas/Easy2boot/" title="Contenido extra" class="md-tabs__link">
+          Contenido extra
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Incidencias/30-04-2019/" title="Incidencias" class="md-tabs__link">
+          Incidencias
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="TipsTaBet" class="md-nav__button md-logo">
+      
+        <i class="md-icon">devices_other</i>
+      
+    </a>
+    TipsTaBet
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Fichas-tecnicas/" title="Fichas técnicas" class="md-nav__link">
+      Fichas técnicas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Rockstor/" title="Rockstor" class="md-nav__link">
+      Rockstor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Raspberry-Pi/" title="Raspberry Pi" class="md-nav__link">
+      Raspberry Pi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Servidor/" title="Presupuesto Servidor" class="md-nav__link">
+      Presupuesto Servidor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Log/" title="Control de acceso" class="md-nav__link">
+      Control de acceso
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Proyecto-Celulosa/" title="Proyecto Celulosa" class="md-nav__link">
+      Proyecto Celulosa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Sistemas Operativos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Sistemas Operativos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Comandos de Administración" class="md-nav__link">
+      Comandos de Administración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Punto-de-Restauracion/" title="Punto de restauración" class="md-nav__link">
+      Punto de restauración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Imagenes-del-Sistema/" title="Imagen del Sistema" class="md-nav__link">
+      Imagen del Sistema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Acceso-Remoto/" title="Acceso Remoto" class="md-nav__link">
+      Acceso Remoto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Dominio-linux/" title="Unir Linux a Windows Server" class="md-nav__link">
+      Unir Linux a Windows Server
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Administración de redes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Administración de redes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Planificación de la red" class="md-nav__link">
+      Planificación de la red
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Lenguaje de Marcas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Lenguaje de Marcas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tipstabet/" title="Servidor Web" class="md-nav__link">
+      Servidor Web
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MkDocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Markdown
+      </label>
+    
+    <a href="./" title="Markdown" class="md-nav__link md-nav__link--active">
+      Markdown
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#negrita-y-cursiva" title="Negrita y cursiva" class="md-nav__link">
+    Negrita y cursiva
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-encabezados" title="Los encabezados" class="md-nav__link">
+    Los encabezados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces" title="Enlaces" class="md-nav__link">
+    Enlaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertando-imagenes" title="Insertando imágenes" class="md-nav__link">
+    Insertando imágenes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blockquotes" title="Blockquotes" class="md-nav__link">
+    Blockquotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-listas" title="Creación de listas" class="md-nav__link">
+    Creación de listas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tablas" title="Tablas" class="md-nav__link">
+    Tablas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notas-finales" title="Notas finales" class="md-nav__link">
+    Notas finales
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-de-interes" title="Enlaces de interés" class="md-nav__link">
+    Enlaces de interés
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contenido extra
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contenido extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Easy2boot/" title="Easy2boot" class="md-nav__link">
+      Easy2boot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Rclone/" title="Rclone" class="md-nav__link">
+      Rclone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Github/" title="GitHub Deployment" class="md-nav__link">
+      GitHub Deployment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Incidencias
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Incidencias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Incidencias/30-04-2019/" title="Restaurar contraseña WS" class="md-nav__link">
+      Restaurar contraseña WS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#negrita-y-cursiva" title="Negrita y cursiva" class="md-nav__link">
+    Negrita y cursiva
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#los-encabezados" title="Los encabezados" class="md-nav__link">
+    Los encabezados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces" title="Enlaces" class="md-nav__link">
+    Enlaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertando-imagenes" title="Insertando imágenes" class="md-nav__link">
+    Insertando imágenes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blockquotes" title="Blockquotes" class="md-nav__link">
+    Blockquotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-listas" title="Creación de listas" class="md-nav__link">
+    Creación de listas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tablas" title="Tablas" class="md-nav__link">
+    Tablas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notas-finales" title="Notas finales" class="md-nav__link">
+    Notas finales
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-de-interes" title="Enlaces de interés" class="md-nav__link">
+    Enlaces de interés
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/tzinm/Tipstabet/edit/master/docs/Lenguaje-de-Marcas/Markdown.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="sintaxis-markdown">Sintaxis Markdown<a class="headerlink" href="#sintaxis-markdown" title="Permanent link">#</a></h1>
+<h2 id="negrita-y-cursiva">Negrita y cursiva<a class="headerlink" href="#negrita-y-cursiva" title="Permanent link">#</a></h2>
+<p>Comenzando con la sintaxis Markdown, estoy siguiendo una pequeña guía que introduce la sintaxis más básica a utilizar. La guía en cuestión se encuentra pulsando <a href="https://www.markdowntutorial.com/lesson/1/" title="Tutorial de Markdown"><strong>aquÍ</strong></a>.</p>
+<p>Para escribir en <strong>negrita</strong> utilizaremos los asteriscos <code>**</code>, tanto al inicio como al final de la palabra o texto que queramos que aparezca en negrita. Un ejemplo:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">**</span><span class="n">Markdown</span><span class="o">**</span>
+</pre></div>
+</td></tr></table>
+
+<p>Como comentaba, también es posible establecer en negrita un fragmento de texto completo: </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">**</span><span class="n">Esta</span> <span class="n">es</span> <span class="n">una</span> <span class="n">frase</span> <span class="n">en</span> <span class="n">negrita</span><span class="o">**</span>
+</pre></div>
+</td></tr></table>
+
+<p>Para redactar en <em>cursiva</em> utilizaremos el guion bajo <code>_</code>, tanto al inicio como al final, al igual que sucede con la negrita.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">_Markdown_</span>
+<span class="n">_Esta</span> <span class="n">es</span> <span class="n">una</span> <span class="n">frase</span> <span class="n">en</span> <span class="n">cursiva_</span>
+</pre></div>
+</td></tr></table>
+
+<p>También existe la posibilidad de combinar tanto <strong>negrita</strong> como <em>cursiva</em>. Ejemplo:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">_</span><span class="o">**</span><span class="n">Un</span> <span class="n">ejemplo</span> <span class="n">de</span> <span class="n">combinar</span> <span class="n">negrita</span> <span class="n">y</span> <span class="n">cursiva</span><span class="o">**</span><span class="n">_</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="los-encabezados">Los encabezados<a class="headerlink" href="#los-encabezados" title="Permanent link">#</a></h2>
+<p>La segunda parte de esta pequeña guía trata sobre los encabezados. Los encabezados nos ayudan a organizar el contenido mediante secciones.</p>
+<p>En la sintaxis markdown tenemos seis niveles de encabezado, y todos ellos se identifican mediante la "almohadilla" <code>#</code>. Es decir, el numero de "almohadillas" vendrá definido por el nivel de encabezado que queramos establecer. A continuación veremos un ejemplo:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">#</span> <span class="n">Enacabezado</span> <span class="n">de</span> <span class="n">nivel</span> <span class="mi">1</span>
+<span class="o">##</span> <span class="n">Encabezado</span> <span class="n">de</span> <span class="n">nivel</span> <span class="mi">2</span>
+<span class="o">###</span> <span class="n">Encabezado</span> <span class="n">de</span> <span class="n">nivel</span> <span class="mi">3</span>
+<span class="o">####</span> <span class="n">Encabezado</span> <span class="n">de</span> <span class="n">nivel</span> <span class="mi">4</span>
+<span class="o">#####</span> <span class="n">Encabezado</span> <span class="n">de</span> <span class="n">nivel</span> <span class="mi">5</span>
+<span class="o">######</span> <span class="n">Encabezado</span> <span class="n">de</span> <span class="n">nivel</span> <span class="mi">6</span>
+</pre></div>
+</td></tr></table>
+
+<p>Hay que tener en cuenta, que dependiendo de la herramienta que estemos utilizando en nuestros equipos para redactar texto plano en formato markdown, los encabezados y otro tipo de sintaxis lo "decorará" en función al tema que estemos utilizando en dicha herramienta. </p>
+<p>En mi caso estoy utilizando actualmente la aplicación <a href="https://typora.io/" title="Typora"><strong>Typora</strong></a> con el tema "Mystic". Podéis encontrar más temas pulsando <a href="https://theme.typora.io/" title="Temas Typora"><strong>aquí</strong></a>.</p>
+<p><img alt="Ejemplo tema Mystic de la app Typora" src="../../Imagenes/Markdown/tema-mystic.png" /></p>
+<h2 id="enlaces">Enlaces<a class="headerlink" href="#enlaces" title="Permanent link">#</a></h2>
+<p>En muchas ocasiones, podemos ver como en muchos blogs utilizan los enlaces para dirigirnos a otras secciones de la misma página web, o incluso a webs diferentes. Esto se utiliza mucho para permitir al lector profundizar en algún tema que se ha mencionado pero no se ha tratado al completo durante la lectura.</p>
+<p>Para poder introducir una enlace "dentro" de una palabra o una porción de texto, es necesario seguir la siguiente sintaxis:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Enlace</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">[</span><span class="n">google</span><span class="o">]</span><span class="p">(</span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">google</span><span class="p">.</span><span class="n">es</span><span class="p">),</span><span class="w"> </span><span class="n">donde</span><span class="w"> </span><span class="n">google</span><span class="w"> </span><span class="n">es</span><span class="w"> </span><span class="n">el</span><span class="w"> </span><span class="n">texto</span><span class="w"> </span><span class="n">al</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">queremos</span><span class="w"> </span><span class="n">introducir</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">enlace</span><span class="p">,</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">este</span><span class="w"> </span><span class="n">caso</span><span class="w"> </span><span class="n">nos</span><span class="w"> </span><span class="n">llevará</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">página</span><span class="w"> </span><span class="n">principal</span><span class="w"> </span><span class="n">del</span><span class="w"> </span><span class="n">buscado</span><span class="w"> </span><span class="n">Google</span><span class="p">.</span><span class="w"></span>
+</pre></div>
+</td></tr></table>
+
+<p>El resultado sería el siguiente: Enlace a <a href="https://www.google.es" title="Google"><strong>google</strong></a>. Como ya os habréis dado cuenta, en las anteriores secciones he introducido diferentes enlaces siguiendo ésta sintaxis. <strong>Es importante tener en cuenta, que para enlaces externos debemos escribir también el protocolo utilizado (<em>https://, http://, ftp:///, etc.</em>)</strong>.</p>
+<p>Una característica muy interesante y que nos ahorrará tiempo en función de los enlaces que sean idénticos, es la posibilidad de utilizar los "<em>reference link</em>". Esto nos permite utilizar en un documento una palabra o frase como enlace externo. A esta palabra o frase le especificamos el enlace externo (esto no se mostrará en nuestro documento Markdown) y de ese modo cuando queramos modificar dicho enlace externo sólo será necesario modificarlo en una ocasión. Lo veremos con un ejemplo para que quede lo más claro posible.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Este</span> <span class="n">enlace</span> <span class="n">nos</span> <span class="n">llevará</span> <span class="n">a</span> <span class="p">[</span><span class="n">google</span><span class="p">][</span><span class="n">primer</span> <span class="n">enlace</span><span class="p">]</span> <span class="n">y</span> <span class="n">este</span> <span class="n">otro</span> <span class="n">también</span> <span class="n">nos</span> <span class="n">llevará</span> <span class="n">a</span> <span class="p">[</span><span class="n">google</span><span class="p">][</span><span class="n">primer</span> <span class="n">enlace</span><span class="p">].</span> <span class="n">te</span> <span class="n">otro</span> <span class="n">enlace</span> <span class="n">queremos</span> <span class="n">que</span> <span class="n">nos</span> <span class="n">lleve</span> <span class="n">a</span> <span class="p">[</span><span class="n">github</span><span class="p">][</span><span class="n">segundo</span> <span class="n">enlace</span><span class="p">],</span> <span class="n">y</span> <span class="n">para</span> <span class="n">terminar</span> <span class="n">un</span> <span class="n">tercer</span> <span class="n">y</span> <span class="err">ú</span><span class="n">ltimo</span> <span class="n">enlace</span> <span class="n">que</span> <span class="n">nos</span> <span class="n">llevará</span> <span class="n">a</span> <span class="n">la</span> <span class="n">la</span> <span class="p">[</span><span class="n">web</span> <span class="n">de</span> <span class="n">google</span><span class="p">][</span><span class="n">primer</span> <span class="n">enlace</span><span class="p">].</span>
+
+<span class="p">[</span><span class="n">primer</span> <span class="n">enlace</span><span class="p">]</span><span class="o">:</span> <span class="n">www</span><span class="p">.</span><span class="n">google</span><span class="p">.</span><span class="n">es</span>
+<span class="p">[</span><span class="n">segundo</span> <span class="n">enlace</span><span class="p">]</span><span class="o">:</span> <span class="n">www</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">com</span>
+
+<span class="o">*</span><span class="n">Esta</span> <span class="err">ú</span><span class="n">ltima</span> <span class="n">parte</span> <span class="n">es</span> <span class="n">la</span> <span class="n">que</span> <span class="n">no</span> <span class="n">se</span> <span class="n">mostrará</span> <span class="n">en</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">es</span> <span class="n">donde</span> <span class="n">identificamos</span> <span class="n">los</span> <span class="s">&quot;verdaderos enlaces&quot;</span><span class="p">.</span>
+</pre></div>
+</td></tr></table>
+
+<p>Este enlace nos llevará a <a href="https://www.google.es" title="Google">google</a>, y este otro también nos llevará a <a href="https://www.google.es" title="Google">google</a>. Este otro enlace queremos que nos lleve a <a href="https://www.github.com" title="Github">github</a>, y para terminar un tercer y último enlace que nos llevará a la la <a href="https://www.google.es" title="Google">web de google</a>.</p>
+<p>Además de utilizar los enlaces para dirigirnos a otras webs u otras partes de nuestra propia página web, podemos utilizar los links para dirigirnos a diferentes secciones de la web en la que nos encontramos en esos momentos. Para ello nos aprovecharemos de los encabezados, ya que la sintaxis sería la siguiente:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Queremos</span> <span class="n">ir</span> <span class="n">la</span> <span class="n">la</span> <span class="n">sección</span> <span class="ss">&quot;Encabezados&quot;</span><span class="p">;</span>
+<span class="p">[</span><span class="n">Link</span> <span class="n">a</span> <span class="n">los</span> <span class="n">encabezados</span><span class="p">](</span><span class="o">#</span><span class="n">Los</span> <span class="n">encabezados</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>Queremos ir la la sección "Encabezados";
+<a href="#Los encabezados">Link a los encabezados</a></p>
+</blockquote>
+<p>Para terminar con los enlaces, sí queremos que el enlace aparezca tal y como lo podemos ver en un navegador, únicamente es necesario utilizar los <code>&lt;</code>brackets<code>&gt;</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">google</span><span class="p">.</span><span class="n">es</span><span class="o">&gt;</span>
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>Resultado: <a href="https://google.es">https://google.es</a></p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tal y como hemos ido comentando, podemos mezclar las diferentes marcas (recordemos que Markdown es un lenguaje de marcado), es decir, podríamos establecer "google" en negrita, cursiva, como encabezado o lo que se nos ocurriese.</p>
+</div>
+<h2 id="insertando-imagenes">Insertando imágenes<a class="headerlink" href="#insertando-imagenes" title="Permanent link">#</a></h2>
+<p>El funcionamiento es muy similar al de los enlaces, salvo que necesitamos añadir el símbolo de exclamación <code>!</code> al comienzo. Veamos como es la sintaxis.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">Grulla</span> <span class="n">Origami</span><span class="p">](</span><span class="nl">https</span><span class="p">:</span><span class="c1">//images.vexels.com/media/users/3/147901/isolated/preview/96d59de576536789086c1e0b82fc91a7-grulla-de-papel-origami-by-vexels.png)</span>
+</pre></div>
+</td></tr></table>
+
+<p>El símbolo de exclamación va al comienzo tal y como hemos comentado, y los que se encuentra entre corchetes es el título de la imagen, lo que se utiliza a modo de "texto alternativo a la imagen" para la accesibilidad o lo que muestra el navegador cuando no es capaz de cargar dicha imagen.</p>
+<p><img alt="Origami" src="https://images.vexels.com/media/users/3/147901/isolated/preview/96d59de576536789086c1e0b82fc91a7-grulla-de-papel-origami-by-vexels.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>También podemos utilizar los "<em>reference link</em>" al igual que lo hacíamos con los enlaces.</p>
+</div>
+<h2 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">#</a></h2>
+<p>Este apartado es de los más sencillos de la sintaxis que utilizamos en Markdown, ya que se compone exclusivamente del símbolo "mayor que" <code>&gt;</code>. Hay que tener en cuenta que para nos mantenga un mismo texto en la misma cita y no nos los separe, es necesario que el espacio entre párrafos contenga <code>&gt;</code>. Veamos un ejemplo:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span><span class="n">Damos</span> <span class="n">comienzo</span> <span class="n">al</span> <span class="n">primer</span> <span class="n">párrafo</span><span class="p">.</span>
+<span class="o">&gt;</span>
+<span class="o">&gt;</span>
+<span class="o">&gt;</span><span class="n">La</span> <span class="n">línea</span> <span class="n">superior</span> <span class="n">corresponde</span> <span class="n">a</span> <span class="n">la</span> <span class="n">línea</span> <span class="n">de</span> <span class="n">espacio</span> <span class="n">entre</span> <span class="n">párrafos</span><span class="p">.</span>
+<span class="o">&gt;</span>
+<span class="o">&gt;</span>
+<span class="o">&gt;</span>
+<span class="o">&gt;</span><span class="n">Un</span> <span class="err">ú</span><span class="n">ltimo</span> <span class="n">párrafo</span> <span class="n">para</span> <span class="n">finalizar</span> <span class="n">con</span> <span class="n">el</span> <span class="n">ejemplo</span><span class="p">,</span> <span class="n">vamos</span> <span class="n">a</span> <span class="n">exagerar</span> <span class="n">el</span> <span class="n">espacio</span> <span class="n">entre</span> <span class="n">párrafos</span><span class="p">.</span>
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>Damos comienzo al primer párrafo.</p>
+<p>La línea superior corresponde a la línea de espacio entre párrafos.</p>
+<p>Un último párrafo para finalizar con el ejemplo.</p>
+</blockquote>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span><span class="n">Damos</span> <span class="n">comienzo</span> <span class="n">al</span> <span class="n">primer</span> <span class="n">párrafo</span><span class="p">.</span>
+
+
+<span class="o">&gt;</span><span class="n">La</span> <span class="n">línea</span> <span class="n">superior</span> <span class="n">corresponde</span> <span class="n">a</span> <span class="n">la</span> <span class="n">línea</span> <span class="n">de</span> <span class="n">espacio</span> <span class="n">entre</span> <span class="n">párrafos</span><span class="p">.</span>
+
+
+
+
+<span class="o">&gt;</span><span class="n">Un</span> <span class="err">ú</span><span class="n">ltimo</span> <span class="n">párrafo</span> <span class="n">para</span> <span class="n">finalizar</span> <span class="n">con</span> <span class="n">el</span> <span class="n">ejemplo</span><span class="p">,</span> <span class="n">vamos</span> <span class="n">a</span> <span class="n">exagerar</span> <span class="n">el</span> <span class="n">espacio</span> <span class="n">entre</span> <span class="n">párrafos</span><span class="p">.</span>
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>Damos comienzo al primer párrafo.</p>
+<p>La línea superior corresponde a la línea de espacio entre párrafos.</p>
+<p>Un último párrafo para finalizar con el ejemplo.</p>
+</blockquote>
+<p>Es fácil identificar la diferencia en la última parte, donde se exagera el espaciado. Como vemos lo introduce en una cita diferente.</p>
+<h2 id="creacion-de-listas">Creación de listas<a class="headerlink" href="#creacion-de-listas" title="Permanent link">#</a></h2>
+<p>Contamos con dos tipos de listas, las ordenadas y las desordenadas. Las listas ordenadas hacen referencia a las numeradas, y la listas desordenadas hacen referencia a las listas que van precedidas con el símbolo <code>*</code>.  Veamos un ejemplo de ambos casos.</p>
+<ul>
+<li>Lista ordenada:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="n">Pan</span>
+<span class="mi">2</span><span class="p">.</span> <span class="n">Huevos</span>
+<span class="mi">3</span><span class="p">.</span> <span class="n">Leche</span> 
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<ol>
+<li>Pan</li>
+<li>Huevos</li>
+<li>Leche</li>
+</ol>
+</blockquote>
+<ul>
+<li>Lista desordenada</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">*</span> <span class="n">Pan</span>
+<span class="o">*</span> <span class="n">Huevos</span>
+<span class="o">*</span> <span class="n">Leche</span>
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<ul>
+<li>Pan</li>
+<li>Huevos</li>
+<li>Leche</li>
+</ul>
+</blockquote>
+<p>Las listas también pueden tener diferentes niveles, es decir, se pueden identar. Para ello únicamente es necesario añadir un espacio en la lista que queremos identar sobre la anterior. Además podemos mezclar las listas ordenadas con listas desordenadas.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="n">Pan</span>
+    <span class="o">*</span> <span class="mi">1</span> <span class="n">barra</span> <span class="n">normal</span>
+    <span class="o">*</span> <span class="mi">2</span> <span class="n">barras</span> <span class="n">chapata</span>
+<span class="mi">2</span><span class="p">.</span> <span class="n">Huevos</span>
+    <span class="o">*</span> <span class="mi">1</span> <span class="n">docena</span> <span class="n">caseros</span>
+    <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span> <span class="n">docena</span> <span class="n">codorniz</span>
+<span class="mi">3</span><span class="p">.</span> <span class="n">Leche</span>
+    <span class="o">*</span> <span class="mi">2</span> <span class="n">litros</span> <span class="n">desnatada</span>
+    <span class="o">*</span> <span class="mi">6</span> <span class="n">litros</span> <span class="n">entera</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="tablas">Tablas<a class="headerlink" href="#tablas" title="Permanent link">#</a></h2>
+<p>Para crear tablas en Markdown es muy sencillo, de hecho utilizando editores destinados a la sintaxis Markdown, una vez introducida la primera línea de la sintaxis nos creará una tabla, que será muy sencilla de editar.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">|</span> <span class="nv">Primera</span> <span class="nv">Columna</span>      <span class="p">|</span> <span class="nv">Segunda</span> <span class="s s-Atom">columna</span>     <span class="p">|</span> <span class="nv">Tercera</span> <span class="s s-Atom">columna</span>    <span class="p">|</span>
+<span class="p">|</span> <span class="p">:-</span><span class="s s-Atom">-------------------</span> <span class="p">|</span> <span class="p">:-</span><span class="s s-Atom">------------------:</span> <span class="p">|</span> <span class="s s-Atom">------------------:</span> <span class="p">|</span>
+<span class="p">|</span> <span class="nv">Contenido</span>            <span class="p">|</span> <span class="nv">Contenido</span>           <span class="p">|</span> <span class="nv">Contenido</span>          <span class="p">|</span>
+<span class="p">|</span> <span class="nv">Alineación</span> <span class="s s-Atom">izquierda</span> <span class="p">|</span> <span class="nv">Alineación</span> <span class="s s-Atom">centrada</span> <span class="p">|</span> <span class="nv">Alineación</span> <span class="s s-Atom">derecha</span> <span class="p">|</span>
+</pre></div>
+</td></tr></table>
+
+<p>Como podemos ver en el contenido de la parte de arriba, para la creación de las tables debemos tener varios aspectos en cuenta:</p>
+<ol>
+<li>El carácter <code>|</code>es el utilizado para dividir las diferentes columnas de la tabla.</li>
+<li>Los <code>:</code>son utilizados para la alineación del texto. Dos puntos a la izquierda <strong>alineación izquierda</strong>, dos puntos a la derecha <strong>alineación derecha</strong> y dos puntos a ambos lados <strong>alineación centrada</strong>.</li>
+<li>Las líneas que vemos en la segunda fila, son las divisoras entre el encabezado y el contenido de la tabla.</li>
+</ol>
+<p>El resultado es el que vemos a continuación:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Primera Columna</th>
+<th align="center">Segunda columna</th>
+<th align="right">Tercera columna</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Contenido</td>
+<td align="center">Contenido</td>
+<td align="right">Contenido</td>
+</tr>
+<tr>
+<td align="left">Alineación izquierda</td>
+<td align="center">Alineación centrada</td>
+<td align="right">Alineación derecha</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notas-finales">Notas finales<a class="headerlink" href="#notas-finales" title="Permanent link">#</a></h2>
+<p>Para terminar con la sintaxis Markdown, vamos a dejar unos apuntes finales sobre alguna sintaxis a tener en cuenta.</p>
+<ul>
+<li><strong>Notas de pie de página</strong>. La sintaxis sería del siguiente modo:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Añadimos</span> <span class="n">una</span> <span class="n">nota</span> <span class="n">al</span> <span class="n">pie</span> <span class="n">de</span> <span class="n">página</span><span class="p">[</span><span class="o">^</span><span class="mi">1</span><span class="p">]</span>
+<span class="p">[</span><span class="o">^</span><span class="mi">1</span><span class="p">]:</span> <span class="n">Aquí</span> <span class="n">está</span> <span class="n">la</span> <span class="n">nota</span>
+</pre></div>
+</td></tr></table>
+
+<p>Añadimos una nota al pie de página<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<ul>
+<li><strong>Subrayado del texto</strong>. Utilizamos la sintaxis de <em>html</em>:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;u&gt;</span>Subrayamos el texto<span class="nt">&lt;/u&gt;</span>
+</pre></div>
+</td></tr></table>
+
+<p>​       <u>Subrayamos el texto</u></p>
+<ul>
+<li><strong>Línea horizontal.</strong> Esta línea la he utilizado durante todo el documento para dividir las diferentes secciones. La sintaxis es la siguiente:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">---</span>
+</pre></div>
+</td></tr></table>
+
+<hr />
+<ul>
+<li><strong>Texto tachado</strong>. Utilizamos el símbolo "<em>virgulilla</em>", que aparece pulsando <code>Alt Gr + 4</code>. La sintaxis sería del siguiente modo:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">~~</span><span class="n">Texto</span> <span class="n">tachado</span><span class="o">~~</span>
+</pre></div>
+</td></tr></table>
+
+<p>​       ~~Texto tachado~~</p>
+<ul>
+<li><strong>Utilizar las "marcas" sin que afecte a la sintaxis</strong>. Veamos un ejemplo:</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">\</span><span class="o">**</span><span class="n">Podemos</span> <span class="n">utilizar</span> <span class="n">las</span> <span class="ss">&quot;marcas&quot;</span> <span class="n">sin</span> <span class="n">que</span> <span class="n">afecten</span> <span class="n">a</span> <span class="n">la</span> <span class="n">sintaxis</span><span class="o">**</span>
+</pre></div>
+</td></tr></table>
+
+<p>​       *<em>Podemos utilizar las "marcas" sin que afecten a la sintaxis</em>*</p>
+<ul>
+<li><strong>Inserción de video.</strong> Muchas webs utilizadas como plataformas de video, ofrecen la posibilidad de copiar el código como <code>&lt;iframe&gt;</code></li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">&quot;560&quot;</span> <span class="na">height=</span><span class="s">&quot;315&quot;</span> <span class="na">src=</span><span class="s">&quot;https://www.youtube.com/embed/TtSWo2nbzAk&quot;</span> <span class="na">frameborder=</span><span class="s">&quot;0&quot;</span> <span class="na">allow=</span><span class="s">&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="err">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+</pre></div>
+</td></tr></table>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TtSWo2nbzAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="enlaces-de-interes">Enlaces de interés<a class="headerlink" href="#enlaces-de-interes" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://daringfireball.net/" title="Web del desarrollador de Markdown">Web del desarrollador de Markdown</a></li>
+<li><a href="https://typora.io/" title="Web de Typora">Typora</a></li>
+<li><a href="https://support.typora.io/Markdown-Reference/#block-elements" title="Ampliar información Markdown">Ampliando información de Markdown</a></li>
+<li>
+<p><a href="https://www.markdowntutorial.com/lesson/1/" title="Guía práctica Markdown">Guía práctica Markdown</a></p>
+</li>
+<li>
+<p><a href="https://joedicastro.com/pages/markdown.html">Joedicastro</a></p>
+</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Aquí está la nota&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../MkDocs/" title="MkDocs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                MkDocs
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../Herramientas/Easy2boot/" title="Easy2boot" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Easy2boot
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 ASIR 1
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/tzinm" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/tzinm1" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

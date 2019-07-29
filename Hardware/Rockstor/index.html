@@ -1,0 +1,1023 @@
+
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="ASIR 1">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../Imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Rockstor - TipsTaBet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#rockstor" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="TipsTaBet" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">devices_other</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              TipsTaBet
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Rockstor
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Fichas-tecnicas/" title="Hardware" class="md-tabs__link md-tabs__link--active">
+          Hardware
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Sistemas Operativos" class="md-tabs__link">
+          Sistemas Operativos
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Administración de redes" class="md-tabs__link">
+          Administración de redes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Lenguaje de Marcas" class="md-tabs__link">
+          Lenguaje de Marcas
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Herramientas/Easy2boot/" title="Contenido extra" class="md-tabs__link">
+          Contenido extra
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Incidencias/30-04-2019/" title="Incidencias" class="md-tabs__link">
+          Incidencias
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="TipsTaBet" class="md-nav__button md-logo">
+      
+        <i class="md-icon">devices_other</i>
+      
+    </a>
+    TipsTaBet
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Fichas-tecnicas/" title="Fichas técnicas" class="md-nav__link">
+      Fichas técnicas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Rockstor
+      </label>
+    
+    <a href="./" title="Rockstor" class="md-nav__link md-nav__link--active">
+      Rockstor
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" title="Introducción" class="md-nav__link">
+    Introducción
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" title="Instalación" class="md-nav__link">
+    Instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#almacenamiento" title="Almacenamiento" class="md-nav__link">
+    Almacenamiento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shares" title="Shares" class="md-nav__link">
+    Shares
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#samba" title="Samba" class="md-nav__link">
+    Samba
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Raspberry-Pi/" title="Raspberry Pi" class="md-nav__link">
+      Raspberry Pi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Servidor/" title="Presupuesto Servidor" class="md-nav__link">
+      Presupuesto Servidor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Log/" title="Control de acceso" class="md-nav__link">
+      Control de acceso
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Proyecto-Celulosa/" title="Proyecto Celulosa" class="md-nav__link">
+      Proyecto Celulosa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Sistemas Operativos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Sistemas Operativos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Comandos de Administración" class="md-nav__link">
+      Comandos de Administración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Punto-de-Restauracion/" title="Punto de restauración" class="md-nav__link">
+      Punto de restauración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Imagenes-del-Sistema/" title="Imagen del Sistema" class="md-nav__link">
+      Imagen del Sistema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Acceso-Remoto/" title="Acceso Remoto" class="md-nav__link">
+      Acceso Remoto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Dominio-linux/" title="Unir Linux a Windows Server" class="md-nav__link">
+      Unir Linux a Windows Server
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Administración de redes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Administración de redes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Planificación de la red" class="md-nav__link">
+      Planificación de la red
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Lenguaje de Marcas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Lenguaje de Marcas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Servidor Web" class="md-nav__link">
+      Servidor Web
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/MkDocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Contenido extra
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contenido extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Easy2boot/" title="Easy2boot" class="md-nav__link">
+      Easy2boot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Rclone/" title="Rclone" class="md-nav__link">
+      Rclone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Herramientas/Github/" title="GitHub Deployment" class="md-nav__link">
+      GitHub Deployment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Incidencias
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Incidencias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Incidencias/30-04-2019/" title="Restaurar contraseña WS" class="md-nav__link">
+      Restaurar contraseña WS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" title="Introducción" class="md-nav__link">
+    Introducción
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" title="Instalación" class="md-nav__link">
+    Instalación
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#almacenamiento" title="Almacenamiento" class="md-nav__link">
+    Almacenamiento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shares" title="Shares" class="md-nav__link">
+    Shares
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#samba" title="Samba" class="md-nav__link">
+    Samba
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/tzinm/Tipstabet/edit/master/docs/Hardware/Rockstor.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="rockstor">Rockstor<a class="headerlink" href="#rockstor" title="Permanent link">#</a></h1>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">#</a></h2>
+<p>Rocsktor es el sistema operativo que utilizaremos en nuestro NAS. Está basado en la distribución de Linux CentOS, adaptada para una configuración sencilla desde un navegador web.</p>
+<p>Entre una de sus principales características, utiliza como sistema de ficheros <a href="https://es.wikipedia.org/wiki/Btrfs">BTRFS</a> (integrado en el Kernel de Linux), lo que permite tener una serie de beneficios, tales como <strong>copy-on-write</strong>, respecto a otro tipo de sistema de ficheros como ext4. </p>
+<p>En el siguiente <a href="http://rockstor.com/docs/intro.html#features">enlace</a> podemos encontrar un resumen de las principales características de este sistema operativo.</p>
+<h2 id="instalacion">Instalación<a class="headerlink" href="#instalacion" title="Permanent link">#</a></h2>
+<p>Para proceder a la instalación es necesario consultar los requisitos mínimos de hardware que necesitaremos. En la propia web de Rockstor podemos consultar estos <a href="http://rockstor.com/docs/quickstart.html#minimum-system-requirements">datos</a>. En la siguiente tabla exponemos una comparativa de los requisitos mínimos y el equipamiento introducido.</p>
+<table>
+<thead>
+<tr>
+<th>Requisitos mínimos</th>
+<th>NAS Rockstar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>64-bit Intel o AMD</td>
+<td>64-bit AMD</td>
+</tr>
+<tr>
+<td>2GB RAM</td>
+<td>4GB RAM</td>
+</tr>
+<tr>
+<td>8GB espacio para el SO</td>
+<td>80GB espacio para el SO</td>
+</tr>
+<tr>
+<td>1 disco extra para almacenamiento</td>
+<td>1 disco de 250GB para almacenamiento</td>
+</tr>
+</tbody>
+</table>
+<p>Los pasos para la instalación del mismo son realmente sencillos. Al igual que sucede con cualquier sistema operativo, necesitamos crear una unidad <em>booteable</em> (DVD, USB, etc.), utilizando las herramientas disponibles en Windows, Linux o MacOS. </p>
+<p>Una vez que tenemos preparada la unidad <em>booteable</em>, pincharemos dicha unidad a nuestro NAS y en la BIOS seleccionaremos como unidad de arranque principal el dispositivo que hayamos preparado como unidad de arranque.</p>
+<h2 id="almacenamiento">Almacenamiento<a class="headerlink" href="#almacenamiento" title="Permanent link">#</a></h2>
+<p>En nuestra instalación contamos con dos discos:</p>
+<ul>
+<li>Un disco para el SO de 80GB</li>
+<li>Un disco de 250GB para datos (todos los datos )</li>
+</ul>
+<p><img alt="Almacenamiento Rockstor" src="../../Imagenes/Rockstor/Rockstor_disks.png" /></p>
+<p>Rockstor trabaja con el disco en crudo, es decir debemos entregarle el disco sin particiones. En caso de que tengamos alguna partición en alguno de los discos que hemos añadido al NAS tendremos posibilidad de eliminar dichas particiones a través de la interfaz web.</p>
+<p>En este sistema, lo que entendemos habitualmente como particiones en este caso serán <em>pools</em>, que nos permite combinar diferentes discos (RAIDs)  como si fuese un único volumen.</p>
+<p>Nuestra elección al contar únicamente con una unidad para almacenamiento de datos, ha sido la creación de un pool <em>"simple"</em> con toda la capacidad del disco. La interfaz nos permite aplicar diferentes configuraciones, como la compresión u opciones de "montado" de la unidad, aunque nosotros hemos mantenido las opciones por defecto.</p>
+<p><img alt="Rockstor: lista de pools" src="../../Imagenes/Rockstor/Rockstar_pool.png" /></p>
+<h2 id="shares">Shares<a class="headerlink" href="#shares" title="Permanent link">#</a></h2>
+<p>Una vez que tenemos el pool creado, pasamos a crear <strong><em>shares</em></strong> (podemos entenderlos como directorios). La creación de estos directorios es muy sencilla, en el momento que nos encontramos del proyecto contamos con dos directorios, que son los siguientes:</p>
+<ul>
+<li>Datos: directorio que utilizaremos para dejar capturas y toda la información referente al proyecto.</li>
+<li>Imágenes: directorio donde almacenaremos la imágenes (backups) de los equipos.</li>
+</ul>
+<p><img alt="share" src="../../Imagenes/Rockstor/Rockstor_share_datos.png" /></p>
+<p><img alt="Rockstor" src="../../Imagenes/Rockstor/Rockstor_share_imagenes.png" /></p>
+<h2 id="samba">Samba<a class="headerlink" href="#samba" title="Permanent link">#</a></h2>
+<p>La principal función de un NAS es tener datos de una forma centralizada y poder acceder a ellos a través de la red. Para ello es necesario tener algún servicio orientado a la transferencia de archivos como puede ser FTP, SMB o NFS (Rockstor dispone de estos tres servicios preinstalados). </p>
+<p>Hemos seleccionado SMB por ser un protocolo extendido y por su compatibilidad con los diferentes Sistemas Operativos. Tal y como hemos comentado este servicio viene preinstalado, pero no activado, por lo tanto es necesario acudir al menú <strong><em>servicies</em></strong> para habilitarlo.</p>
+<p><img alt="Rockstor: servicio samba" src="../../Imagenes/Rockstor/Rockstor_services_samba.png" /></p>
+<p>Una vez que tenemos el servicio activado, necesitamos crear un <em>samba export</em>, así lo denomina Rockstor, pero es simplemente una unidad compartida a través de SMB. Para continuar con el apartado anterior, crearemos las unidades en base a los directorios <strong>datos</strong> e <strong>imagenes</strong>.</p>
+<p>La creación es muy sencilla, una vez que estamos en la pestaña de "Samba", tenemos que pulsar el siguiente botón,<img alt="Rockstor: botón samba export" src="../../Imagenes/Rockstor/Rockstor_boton_samba_export.png" /> , el cual nos llevará a la siguiente ventana:</p>
+<p><img alt="Rockstor: samba export" src="../../Imagenes/Rockstor/Rockstor_samba_export.png" /> </p>
+<p>Los parámetros que debemos considerar son los siguientes:</p>
+<ul>
+<li><strong>Shares to export</strong>: aquí seleccionamos el directorio que queremos compartir.</li>
+<li><strong>Admin users</strong>: elección de los usuarios con permisos de acceso.</li>
+<li><strong>Browseable</strong>: permitir que el recurso compartido se muestre visible.</li>
+<li><strong>Guest ok</strong>: permisos para invitados.</li>
+<li><strong>Read only</strong>: recurso de sólo lectura.</li>
+</ul>
+<p>Tal y como vemos, podemos personalizar la configuración añadiendo más directivas en <strong>custom configuration</strong>. En <a href="https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-rg-es-4/ch-samba.html">este enlace</a> podemos obtener más información sobre los parámetros de configuración de samba.</p>
+<p>Los directorios compartidos con los que nos encontramos son los siguientes:</p>
+<p><img alt="Rockstor: samba share exports" src="../../Imagenes/Rockstor/Rockstor_samba_export_shares.png" /></p>
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Fichas-tecnicas/" title="Fichas técnicas" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Fichas técnicas
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Raspberry-Pi/" title="Raspberry Pi" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Raspberry Pi
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 ASIR 1
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/tzinm" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/tzinm1" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

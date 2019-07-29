@@ -1,0 +1,46 @@
+site_name: TipsTaBet
+site_author: Grupo3 ASIR1 Zabalburu
+copyright: "Copyright &copy; 2019 Grupo3 ASIR1 Colegio Zabalburu"
+theme:
+ name: readthedocs
+ language: 'es'
+ favicon: ./img/favicon.ico
+ logo: ./img/logo.png
+ highlightjs: true
+ hljs_languages:
+  - bash
+  - powershell
+  - markdown
+  - yaml
+pages:
+- Home: 'index.md'
+- Hardware:
+  - Máquinas windows: ./Hardware/Windows-clientes.md
+  - Rockstor: ./Hardware/Rockstor.md
+  - Rpi: ./Hardware/Raspberry-Pi.md
+  - Celulosa: ./Hardware/Proyecto-Celulosa.md
+- Sistemas Operativos:
+  - Máquinas clientes:
+    - Imagen del Sistema: ./Sistemas-Operativos/Equipos-Clientes/Imagenes-del-Sistema.md
+    - Punto de restauración: ./Sistemas-Operativos/Equipos-Clientes/Punto-de-Restauracion.md
+    - Escritorio Remoto: ./Sistemas-Operativos/Equipos-Clientes/Acceso-Remoto.md
+- Lenguaje de Marcas:
+  - MkDocs: ./Lenguaje-de-Marcas/Prueba/MkDocs.md
+  - Markdown: ./Lenguaje-de-Marcas/Prueba/Markdown.md
+- Herramientas:
+  - Docker:
+    - La herramienta docker: ./Herramientas/Docker/Docker.md
+    - Syncthing: ./Herramientas/Docker/Syncthing.md
+  - Easy2boot: ./Herramientas/Easy2boot.md
+  - Rclone: ./Herramientas/Rclone.md
+- Recursos Adicionales:
+  - Comandos de administración Linux: ./Recursos-Adicionales/Comandos-de-Administracion.md
+extra:
+  social:
+    - type: 'twitter'
+      link: 'https://twitter.com/tzinm1'
+markdown_extensions:
+ - toc:
+    permalink: true
+    permalink: "#"
+ - admonition    

@@ -1,0 +1,1323 @@
+
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="ASIR 1">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../Imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Rclone - TipsTaBet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#rclone" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="TipsTaBet" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">devices_other</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              TipsTaBet
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Rclone
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Hardware/Fichas-tecnicas/" title="Hardware" class="md-tabs__link">
+          Hardware
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Sistemas Operativos" class="md-tabs__link">
+          Sistemas Operativos
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Administración de redes" class="md-tabs__link">
+          Administración de redes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Lenguaje de Marcas" class="md-tabs__link">
+          Lenguaje de Marcas
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Easy2boot/" title="Contenido extra" class="md-tabs__link md-tabs__link--active">
+          Contenido extra
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Incidencias/30-04-2019/" title="Incidencias" class="md-tabs__link">
+          Incidencias
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="TipsTaBet" class="md-nav__button md-logo">
+      
+        <i class="md-icon">devices_other</i>
+      
+    </a>
+    TipsTaBet
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Fichas-tecnicas/" title="Fichas técnicas" class="md-nav__link">
+      Fichas técnicas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Rockstor/" title="Rockstor" class="md-nav__link">
+      Rockstor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Raspberry-Pi/" title="Raspberry Pi" class="md-nav__link">
+      Raspberry Pi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Servidor/" title="Presupuesto Servidor" class="md-nav__link">
+      Presupuesto Servidor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Log/" title="Control de acceso" class="md-nav__link">
+      Control de acceso
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Proyecto-Celulosa/" title="Proyecto Celulosa" class="md-nav__link">
+      Proyecto Celulosa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Sistemas Operativos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Sistemas Operativos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Comandos de Administración" class="md-nav__link">
+      Comandos de Administración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Punto-de-Restauracion/" title="Punto de restauración" class="md-nav__link">
+      Punto de restauración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Imagenes-del-Sistema/" title="Imagen del Sistema" class="md-nav__link">
+      Imagen del Sistema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Acceso-Remoto/" title="Acceso Remoto" class="md-nav__link">
+      Acceso Remoto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Dominio-linux/" title="Unir Linux a Windows Server" class="md-nav__link">
+      Unir Linux a Windows Server
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Administración de redes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Administración de redes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Planificación de la red" class="md-nav__link">
+      Planificación de la red
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Lenguaje de Marcas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Lenguaje de Marcas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Servidor Web" class="md-nav__link">
+      Servidor Web
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/MkDocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Contenido extra
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contenido extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Easy2boot/" title="Easy2boot" class="md-nav__link">
+      Easy2boot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Rclone
+      </label>
+    
+    <a href="./" title="Rclone" class="md-nav__link md-nav__link--active">
+      Rclone
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-rclone" title="¿Qué es Rclone?" class="md-nav__link">
+    ¿Qué es Rclone?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" title="Instalación:" class="md-nav__link">
+    Instalación:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion" title="Configuración:" class="md-nav__link">
+    Configuración:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opciones-utilizadas" title="Opciones utilizadas:" class="md-nav__link">
+    Opciones utilizadas:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging" title="Logging" class="md-nav__link">
+    Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bwlimit" title="Bwlimit" class="md-nav__link">
+    Bwlimit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" title="Update" class="md-nav__link">
+    Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tpslimit" title="Tpslimit" class="md-nav__link">
+    Tpslimit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfers" title="Transfers" class="md-nav__link">
+    Transfers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-de-logs" title="Control de Logs" class="md-nav__link">
+    Control de Logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-comandos-utiles" title="Otros comandos útiles:" class="md-nav__link">
+    Otros comandos útiles:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-interesantes" title="Enlaces interesantes:" class="md-nav__link">
+    Enlaces interesantes:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Github/" title="GitHub Deployment" class="md-nav__link">
+      GitHub Deployment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Incidencias
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Incidencias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Incidencias/30-04-2019/" title="Restaurar contraseña WS" class="md-nav__link">
+      Restaurar contraseña WS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-rclone" title="¿Qué es Rclone?" class="md-nav__link">
+    ¿Qué es Rclone?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" title="Instalación:" class="md-nav__link">
+    Instalación:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion" title="Configuración:" class="md-nav__link">
+    Configuración:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opciones-utilizadas" title="Opciones utilizadas:" class="md-nav__link">
+    Opciones utilizadas:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging" title="Logging" class="md-nav__link">
+    Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bwlimit" title="Bwlimit" class="md-nav__link">
+    Bwlimit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" title="Update" class="md-nav__link">
+    Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tpslimit" title="Tpslimit" class="md-nav__link">
+    Tpslimit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfers" title="Transfers" class="md-nav__link">
+    Transfers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-de-logs" title="Control de Logs" class="md-nav__link">
+    Control de Logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-comandos-utiles" title="Otros comandos útiles:" class="md-nav__link">
+    Otros comandos útiles:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enlaces-interesantes" title="Enlaces interesantes:" class="md-nav__link">
+    Enlaces interesantes:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/tzinm/Tipstabet/edit/master/docs/Herramientas/Rclone.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="rclone">Rclone<a class="headerlink" href="#rclone" title="Permanent link">#</a></h1>
+<h2 id="que-es-rclone">¿Qué es Rclone?<a class="headerlink" href="#que-es-rclone" title="Permanent link">#</a></h2>
+<p>Es una herramienta muy potente para interactuar con servicios en la nube. Esta herramienta se utiliza desde la línea de comandos, y nos permite trabajar principalmente de tres modos diferentes.</p>
+<ul>
+<li><strong>Rclone sync:</strong> para la <strong>sincronización</strong> hacía o desde los servicios en la nube. </li>
+<li><strong>Rclone copy:</strong> para el <strong>copiado</strong> hacía o desde los servicios en la nube. La diferencia respecto a <strong>sync</strong> es que a pesar de que se eliminen algunos ficheros, en el dispositivo cliente (donde hemos realizado la copia) esos fichero eliminados nos desaparecerán, puesto que no están sincronizados.</li>
+<li><strong>Rclone mount</strong>: para el <strong>montaje</strong> de servicios en la nube en nuestro dispositivos. Tal y como realiza el comando <strong>mount</strong> en Linux, nos permite montar una unidad de los servicios en la nube compatibles, como si se tratase de un sistema de ficheros de nuestro dispositivo.</li>
+</ul>
+<p>Hay una larga lista de servicios compatibles con esta herramienta, los podemos consultar en este <a href="https://rclone.org/">enlace</a>.</p>
+<p><img alt="Servicio Rclone" src="https://dl.dropboxusercontent.com/s/fpp146ye8ijyt2e/Rclone_servicios.png?dl=0" /></p>
+<h2 id="instalacion">Instalación:<a class="headerlink" href="#instalacion" title="Permanent link">#</a></h2>
+<p>Como ya se ha comentado, el Sistema Operativo Rockstor está más limitado que otros Sistemas orientados a NAS, en lo referente a Docker. Por lo tanto no podremos instalar esta herramienta como contenedor, por lo que haremos la instalación dentro del propio Sistema desde la línea de comandos.</p>
+<p>La instalación es muy sencilla, en <a href="https://rclone.org/install/">esta web</a> podemos ver la instalación tanto para Linux como para MacOS. Podemos optar por llamar a un script que realizará todo el proceso de instalación, o descargarnos un fichero <em>.zip</em> que descomprimiremos e instalaremos.</p>
+<p>Un aspecto importante a tener en cuenta es que siguiendo la guía de instalación sobre Linux, no descarga la última versión. Para evitar esto, y descargar la última versión, iremos a este <a href="https://rclone.org/downloads/">enlace</a> y copiaremos la dirección del fichero <em>.zip</em> que corresponde con nuestra máquina. </p>
+<p><img alt="Rclone última versión" src="https://dl.dropboxusercontent.com/s/6vh7e5f6s9szhbp/Rclone_ultima_version.png?dl=0" /></p>
+<p>Los siguientes puntos sobre como debemos instalar esta herramienta están <strong>copiados</strong> directamente desde la web de rclone. </p>
+<ul>
+<li>Descarga del fichero <em>.zip</em> y descompresión.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>curl -O https://downloads.rclone.org/v1.47.0/rclone-v1.47.0-linux-amd64.zip
+unzip rclone-v1.47.0-linux-amd64.zip
+<span class="nb">cd</span> rclone-v1.47.0-linux-amd64
+</pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La ruta que debemos poner es la que corresponde a la última versión de Rclone.</p>
+</div>
+<ul>
+<li>Trasladar el binario <em>rclone</em>.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo cp rclone /usr/bin/
+sudo chown root:root /usr/bin/rclone
+sudo chmod <span class="m">755</span> /usr/bin/rclone
+</pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La ruta /usr/bin se encuentra en el PATH, que es la variable que contiene las rutas a los directorios que contienen los ficheros ejecutables. De ese modo podremos ejecutar Rclone sin importar en que directorio del sistema nos encontremos.</p>
+</div>
+<ul>
+<li>Añadiendo el manual de rclone a la base de datos de manuales.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo mkdir -p /usr/local/share/man/man1
+sudo cp rclone.1 /usr/local/share/man/man1/
+sudo mandb 
+</pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La herramienta unzip no se encuentra instalada, para instalarla es suficiente con ejecutar <code>yum install unzip</code>.
+Copiamos el manual y actualizamos la base de datos de los manuales para que podamos invocar el "man page" ejecutando <code>man rclone</code>.</p>
+</div>
+<h2 id="configuracion">Configuración:<a class="headerlink" href="#configuracion" title="Permanent link">#</a></h2>
+<p>La configuración es muy sencilla ya que el propia sistema nos guía una vez que ejecutamos <code>rclone config</code>. Cuando ejecutamos este comando nos aparecerá un pequeño menú desde donde crearemos los nuevos servicios remotos.</p>
+<p><img alt="Rclone config" src="../../Imagenes/Rclone/rclone_config.png" /></p>
+<p>La opción para crear es la "<strong>n</strong>", que una vez seleccionada esta opción nos aparecerá en el prompt para asignarle un nombre, y a continuación debemos elegir que servicio queremos configurar.</p>
+<p><img alt="Rclone configuración nube" src="https://dl.dropboxusercontent.com/s/110drdtikmgfmv2/Rclone_servicio_nube.png?dl=0" /></p>
+<p>Hemos seleccionado Google Drive que es la opción número 12 (quizá pueda variar de el número si la versión de Rclone es diferente). Nos aparecerán una serie de parámetros para ir configurando, únicamente mostraré los que hemos necesitado configurar, puesto que el resto se han dejado por defecto ya que los valores por defecto eran suficientes tal y como indica la guía de rclone.</p>
+<p>En uno de los pasos de la configuración debemos establecer los permisos que le otorgamos, para lo que necesitamos la opción número "1" es la más adecuada, siendo esta la más permisiva.</p>
+<p><img alt="Rclone permisos" src="https://dl.dropboxusercontent.com/s/yt8w5zqj8quut0x/Rclone_permisos.png?dl=0" /></p>
+<p>A continuación, si no queremos que rclone tenga acceso a todos los directorios que tenemos en nuestra cuenta de Google Drive, debemos especificar cual será el directorio root. La mejor forma de hacerlo es copiar y pegar la parte final de la url que nos aparece cuando estamos en el directorio que queremos que rclone tenga acceso. y </p>
+<p><img alt="Rclone configuración directorio" src="../../Imagenes/Rclone/Google_Drive_Directorio.png" /></p>
+<p><img alt="Rclone root folder" src="../../Imagenes/Rclone/rclone-root-folder.png" /></p>
+<p>Otra de las preguntas que nos aparecerán es si deseamos editar la configuración avanzada, para nuestro supuesto no es necesario, por lo que seleccionaremos "<strong>n</strong>".</p>
+<p><img alt="Rclone configuración avanzada" src="https://dl.dropboxusercontent.com/s/28fayigbg9xro0q/Rclone_advanced_config.png?dl=0" /></p>
+<p>La siguiente cuestión a tener en cuenta es si deseamos utilizar la configuración automática. Como podemos ver en la explicación, en el segundo punto nos indica que sí estamos trabajando en una máquina remota (por ejemplo contra nuestro servidor vía ssh) debemos seleccionar la opción "<strong>n</strong>", que será la opción que seleccionaremos.</p>
+<p><img alt="Rclone remote server" src="https://dl.dropboxusercontent.com/s/fw1nfkx3uh1iye9/Rclone_servidor_remoto.png?dl=0" /></p>
+<p>Al haber pulsado la opción "<strong>n</strong>" nos mostrará una dirección que debemos copiar y pegar en nuestro navegador. Esta dirección nos solicitará autenticarnos con la cuenta de Google Drive que queremos vincular con Rclone.  Una vez que nos autentiquemos nos aparecerá un código que copiaremos y pegaremos en la línea que nos solicita Rclone.</p>
+<p><img alt="Rclone api google" src="https://dl.dropboxusercontent.com/s/wq5i7a9hbtkq8r5/Rclone_api.png?dl=0" /></p>
+<p>Antes de finalizar, nos preguntará si deseamos configurar como un Team Drive [^1], no es nuestro caso por lo tanto seleccionaremos "<strong>n</strong>".</p>
+<p><img alt="Rclone Team Drive" src="https://dl.dropboxusercontent.com/s/m70pq7mb4hsl9iw/Rclone_teamdrive.png?dl=0" /></p>
+<p>Nos mostrará un pequeño resumen con el "<em>remote</em>" que hemos configurado. Para finalizar debemos seleccionar con la letra "<strong>q</strong>" (Quit config).</p>
+<p><img alt="Rclone finalizamos configuración" src="https://dl.dropboxusercontent.com/s/xqbu414lkpwm5cn/Rclone_configuracion_final.png?dl=0" /></p>
+<h2 id="opciones-utilizadas">Opciones utilizadas:<a class="headerlink" href="#opciones-utilizadas" title="Permanent link">#</a></h2>
+<p>Nuestro objetivo es sincronizar el directorio al que hemos dado acceso a rclone con un directorio que tenemos en nuestro NAS. Como ya hemos hablado en la primera parte, para la sincronización hemos utilizado el comando <strong>rclone sync</strong>. Para el correcto funcionamiento hemos hecho uso de varios parámetros/flags que se explicarán a continuación.</p>
+<h3 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">#</a></h3>
+<p>Utilizaremos dos opciones para monitorizar rclone.</p>
+<p><a href="https://rclone.org/docs/#v-vv-verbose">-v, --verbose</a>: rclone tiene 4 niveles de log, <em>ERROR</em>, <em>AVISO</em>, <em>INFO</em> Y <em>DEBUG</em>. Cuando utilizamos <code>-v</code> , rclone muestra los tres primeros niveles de error.</p>
+<p><a href="https://rclone.org/docs/#log-file-file">--log-file=FILE</a>: en combinación con la anterior, todo el log monitorizado lo enviamos a un fichero, que será el que establecemos después del símbolo <code>=</code>.</p>
+<h3 id="bwlimit">Bwlimit<a class="headerlink" href="#bwlimit" title="Permanent link">#</a></h3>
+<p><a href="https://rclone.org/docs/#bwlimit-bandwidth-spec">--bwlimit</a>: con está opción limitamos el ancho de banda. En nuestro caso la utilizaremos para no ocupar todo el ancho de banda que nos proporciona nuestro ISP. Por la web se puede ver limitaciones de <strong>8650k</strong> (Hace referencia a 8650 KBytes, que si hacemos la operación matemática correspondiente son aproximadamente 750GB diarios, que es el limite para los Team Drive <em>enlace más abajo</em>).</p>
+<p>Según lo que se puede leer por algunas consultas realizadas al soporte de Google, no hay limitaciones, salvo en los que se refiere a contenido de video (Por ejemplo si queremos utilizar GD para almacén del contenido de Plex) y de hosting.</p>
+<p>Limitaciones de Google:</p>
+<ul>
+<li><a href="https://support.google.com/drive/answer/37603?hl=es">Files you can store in Google Drive</a></li>
+<li><a href="https://support.google.com/a/answer/7338880?hl=en">Team Drive Limits</a>; <em>After you've uploaded 750 GB to a Team Drive in 1 day, you'll be blocked from uploading additional files that day. However, file uploads already in progress will complete, up to a 5 TB maximum for a single file.</em></li>
+</ul>
+<h3 id="update">Update<a class="headerlink" href="#update" title="Permanent link">#</a></h3>
+<p><a href="https://rclone.org/docs/#u-update">-u, --update</a>: con esta opción obligamos a rclone que omita cualquier archivo que tenga una hora de modificación más reciente en destino que en origen. Además, si el archivo tiene la misma hora de modificación en destino como en origen, sólo se actualizará si el tamaño es diferente.</p>
+<h3 id="tpslimit">Tpslimit<a class="headerlink" href="#tpslimit" title="Permanent link">#</a></h3>
+<p><a href="https://rclone.org/docs/#tpslimit-float">--tpslmit</a>: debido a los baneos de las cuentas de google drive (los baneos son de 24 horas, que es el tiempo que tarde Google en refrescar las <em>estadísticas</em>, desconozco si los baneos son mayores si el baneo es reiterado). Según lo que he podido leer en varios grupos de telegram y por internet, la cifra más acertada es 8, que son el número de peticiones máximas por segundo que haríamos a la API de Google.</p>
+<h3 id="transfers">Transfers<a class="headerlink" href="#transfers" title="Permanent link">#</a></h3>
+<p><a href="https://rclone.org/docs/#transfers-n">--transfers</a>: es el número de transferencias en paralelo que se realizan. Por defecto rclone establece 4 transferencias en paralelo. Puesto que me parece un número excesivamente bajo, y aprovechando el ancho de banda que le hemos dados, vamos a elevar el número a 15.</p>
+<p>Estas son las opciones que hemos necesitado introducir para que la sincronización funcione correctamente. Lo que pretendemos es una sincronización y con la ejecución de <strong>rclone sync</strong> en una ocasión no conseguiremos la sincronización indefinida, la sincronización se completa cada vez que este comando se ejecuta, por lo tanto para facilitar esto haremos uso de dos pequeños scripts.</p>
+<ul>
+<li><strong>Script 1:</strong></li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
+rclone sync ASIR: /sharedfolders/ASIRDrive -v --log-file<span class="o">=</span>/home/Logs/rclonesync.txt -u --bwlimit 8650k --tpslimit <span class="m">10</span> --transfers <span class="m">15</span>
+<span class="nb">exit</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li><strong>Script 2:</strong></li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#Comprobamos que el script no se está ejecutando mediante pidof</span>
+<span class="k">if</span> pidof -o %PPID -x sh /home/Scripts/rclonesync.sh<span class="p">;</span> <span class="k">then</span>
+    <span class="nb">exit</span> <span class="m">1</span>
+<span class="k">fi</span>
+<span class="c1">#Después de comprobar, si no se está ejecutando pasará a ejecutar los siguientes comandos.</span>
+<span class="nb">echo</span> <span class="s2">&quot;Ejecutando rclonesync...&quot;</span>
+<span class="c1">#Puesto que la ruta de los scripts no se encuentra en la variable PATH es neceario indicarle la ruta completa. Esto ejecutará el &quot;Script 1&quot;</span>
+/home/Scripts/rclonesync.sh
+<span class="nb">echo</span> <span class="s2">&quot;¡La ejecución del script ha finalizado!&quot;</span>
+<span class="nb">exit</span>
+</pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La ruta que establecida después de sh puede diferir con la que utilicéis. Tenéis que indicar la ruta donde se encuentra vuestro script.</p>
+</div>
+<p>Una vez que hemos creado los Scripts en el directorio de Rclone que hayamos decidido, les daremos permiso de ejecución para que no sea necesario llamar al comando <code>sh</code> y con poner la ruta completa del script sea suficiente. Esto nos evitará algunos problemas que pueden surgir con el comando pidof.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">chmod</span> <span class="n">a</span><span class="o">+</span><span class="n">x</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">Scripts</span><span class="cm">/*</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li><strong>a+x:</strong> otorgamos permisos ejecución a todos los usuarios.</li>
+<li><strong>/home/Scripts/*:</strong> a todo el contenido que se encuentra en esta ruta. </li>
+</ul>
+<p>Ya tenemos los scripts que queremos ejecutar para controlar de una forma más sencilla la sincronización, pero nos falta configurar que el sistema ejecute estos scripts automáticamente. </p>
+<p><strong>¿Qué necesitamos?</strong></p>
+<p>Como hemos hecho en otras ocasiones, haremos uso del programador de <em>trabajos</em> de Linux, es decir, de cron. Rockstor está limitado para crear tareas planificadas desde la interfaz web, únicamente nos permite crear varias tareas ya planificadas por el sistema, y no las nuestras propias.</p>
+<p><img alt="Scheduled tasks" src="../../Imagenes/Rclone/Scheduled_tasks.png" /></p>
+<p>Una vez más debemos hacer uso de la línea de comandos, utilizaremos el comando <code>crontab</code> para añadir la ejecución del <strong>"Script 2"</strong> cada <strong>30 minutos</strong>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#Abrimos el editor de cron</span>
+crontab -e
+
+<span class="c1">#Añadimos la tarea</span>
+*/30 * * * * /home/Scripts/comprobar_rclonesync.sh
+</pre></div>
+</td></tr></table>
+
+<h3 id="control-de-logs">Control de Logs<a class="headerlink" href="#control-de-logs" title="Permanent link">#</a></h3>
+<p>Por la web de Rclone no se menciona nada sobre el control del tamaño de los log que se van generando. Sería interesante poder eliminar los datos antiguos, es decir establecer un límite de por ejemplo 10MB y cuando llegue a ese límite que vaya eliminando logs antiguos para poder introducir nuevos logs.</p>
+<p>Como digo, no he visto forma de hacerlo por lo tanto voy a añadir a <strong>cron</strong> un comando a ejecutar para que compruebe el tamaño de los logs y en caso de que supere el tamaño que nosotros le indiquemos (en nuestro caso serán 10MB) que realice una acción.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>find /home/Logs/ -type f -size +10M -exec rm -f <span class="o">{}</span> <span class="se">\;</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li><strong>find:</strong> comando utilizado para realizar búsquedas.</li>
+<li><strong>/home/Logs/:</strong> es la ruta en la que queremos buscar, podemos indicarle la que queramos. La ruta que he marcado es donde se encuentran los Logs de rclone.</li>
+<li><strong>-type f:</strong> es el tipo de fichero que queremos buscar (en linux todo es un fichero), en nuestro caso será un fichero de tipo <em>file</em>.</li>
+<li><strong>-size +10M:</strong> buscamos fichero mayor de 10 Megabytes. Si delante del 10 indicamos un <code>-</code> buscará ficheros menores a 10 Megabytes. Se puede establecer otras unidades de medida que se encuentran explicadas en el manual de find.</li>
+<li><strong>-exec:</strong> nos permite ejecutar una acción con todo aquello que ha encontrado (en función de las condiciones que le hemos marcado).</li>
+<li><strong>rm -f:</strong> rm = remove, es decir elimina lo que hemos encontrado, y como estamos seguros de que lo que ha encontrado lo queremos eliminar pasamos el parámetro <em>-f</em> para que no nos solicite confirmación.</li>
+<li><strong>{}:</strong> identifica a todo lo que ha encontrado el comando find.</li>
+<li><strong>\;:</strong> es la finalización del comando find cuando utilizamos la opción <code>-excec</code>.</li>
+</ul>
+<p><a href="http://man7.org/linux/man-pages/man1/find.1.html">Man find</a></p>
+<h2 id="otros-comandos-utiles">Otros comandos útiles:<a class="headerlink" href="#otros-comandos-utiles" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Listremotes:</strong> nos permite listar todos los <em>remotes</em> que hemos configurado.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>rclone listremotes
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li><strong>List</strong>: nos permite listar el contenido. Hay varios comandos que podemos ejecutar que nos mostrarán diferentes resultados.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#Lista los objetos que se encuentran en REMOTO.</span>
+rclone ls REMOTO:
+<span class="c1">#Lista los directorios que se encuentra en REMOTO con fecha y hora de creación.</span>
+rclone lsd REMOTO:
+<span class="c1">#Lista todo el contenido de la ruta que le indiques, tanto directorios como ficheros.</span>
+rclone lsf REMOTO:
+<span class="c1">#Lista todo el contenido (ficheros y directorios) incluido lo que se encuentra en todas las subcarpetas.</span>
+rclone lsl REMOTO:
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li><strong>Tree</strong>: nos muestra un lista de todo el contenido en forma de árbol. <em>(No lo recomiendo utilizar ya que tarda bastante en ejecutarse)</em>.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>rclone tree REMOTO:
+</pre></div>
+</td></tr></table>
+
+<p><img alt="Rclone tree" src="../../Imagenes/Rclone/rclone-tree.png" /></p>
+<ul>
+<li><strong>Help:</strong> nos permite ver diferentes comandos o flags que podemos introducir.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>rclone --help
+rclone <span class="nb">help</span> flags
+rclone <span class="nb">help</span> backends
+</pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Donde aparece <strong>REMOTO</strong> es necesario sustituirlo por el nombre de la unidad que hayáis configurado.</p>
+</div>
+<h3 id="enlaces-interesantes">Enlaces interesantes:<a class="headerlink" href="#enlaces-interesantes" title="Permanent link">#</a></h3>
+<ul>
+<li><a href="https://support.google.com/a/answer/7212025?hl=es&amp;ref_topic=7337266">¿Qué son las unidades de equipos (Team Drive)?</a></li>
+<li><a href="https://rclone.org/docs/#logging">Funcionamiento de logging en rclone</a></li>
+<li><a href="https://techwiki.co.uk/RClone_-_Filtering">Más filtros de Rclone</a></li>
+<li><a href="https://blog.timekit.io/google-oauth-invalid-grant-nightmare-and-how-to-fix-it-9f4efaf1da35">Google OAuth “invalid_grant” nightmare — and how to fix it</a></li>
+<li><a href="https://rclone.org/commands/">Rclone commands</a></li>
+</ul>
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Easy2boot/" title="Easy2boot" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Easy2boot
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Github/" title="GitHub Deployment" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                GitHub Deployment
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 ASIR 1
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/tzinm" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/tzinm1" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

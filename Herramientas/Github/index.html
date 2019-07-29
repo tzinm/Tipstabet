@@ -1,0 +1,1087 @@
+
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="ASIR 1">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../Imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>GitHub Deployment - TipsTaBet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#github-pages" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="TipsTaBet" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">devices_other</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              TipsTaBet
+            </span>
+            <span class="md-header-nav__topic">
+              
+                GitHub Deployment
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Hardware/Fichas-tecnicas/" title="Hardware" class="md-tabs__link">
+          Hardware
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Sistemas Operativos" class="md-tabs__link">
+          Sistemas Operativos
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Administración de redes" class="md-tabs__link">
+          Administración de redes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Lenguaje de Marcas" class="md-tabs__link">
+          Lenguaje de Marcas
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Easy2boot/" title="Contenido extra" class="md-tabs__link md-tabs__link--active">
+          Contenido extra
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Incidencias/30-04-2019/" title="Incidencias" class="md-tabs__link">
+          Incidencias
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="TipsTaBet" class="md-nav__button md-logo">
+      
+        <i class="md-icon">devices_other</i>
+      
+    </a>
+    TipsTaBet
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/tzinm/Tipstabet/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    tzinm/Tipstabet
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Fichas-tecnicas/" title="Fichas técnicas" class="md-nav__link">
+      Fichas técnicas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Rockstor/" title="Rockstor" class="md-nav__link">
+      Rockstor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Raspberry-Pi/" title="Raspberry Pi" class="md-nav__link">
+      Raspberry Pi
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Servidor/" title="Presupuesto Servidor" class="md-nav__link">
+      Presupuesto Servidor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Log/" title="Control de acceso" class="md-nav__link">
+      Control de acceso
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Hardware/Proyecto-Celulosa/" title="Proyecto Celulosa" class="md-nav__link">
+      Proyecto Celulosa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Sistemas Operativos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Sistemas Operativos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Comandos-de-Administracion/" title="Comandos de Administración" class="md-nav__link">
+      Comandos de Administración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Punto-de-Restauracion/" title="Punto de restauración" class="md-nav__link">
+      Punto de restauración
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Imagenes-del-Sistema/" title="Imagen del Sistema" class="md-nav__link">
+      Imagen del Sistema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Acceso-Remoto/" title="Acceso Remoto" class="md-nav__link">
+      Acceso Remoto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sistemas-Operativos/Equipos-Clientes/Dominio-linux/" title="Unir Linux a Windows Server" class="md-nav__link">
+      Unir Linux a Windows Server
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Administración de redes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Administración de redes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Planificacion-Administracion-de-Redes/Red/" title="Planificación de la red" class="md-nav__link">
+      Planificación de la red
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Lenguaje de Marcas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Lenguaje de Marcas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Tipstabet/" title="Servidor Web" class="md-nav__link">
+      Servidor Web
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/MkDocs/" title="MkDocs" class="md-nav__link">
+      MkDocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Lenguaje-de-Marcas/Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Contenido extra
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Contenido extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Easy2boot/" title="Easy2boot" class="md-nav__link">
+      Easy2boot
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Rclone/" title="Rclone" class="md-nav__link">
+      Rclone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GitHub Deployment
+      </label>
+    
+    <a href="./" title="GitHub Deployment" class="md-nav__link md-nav__link--active">
+      GitHub Deployment
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iniciando-la-implementacion" title="Iniciando la implementación" class="md-nav__link">
+    Iniciando la implementación
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git" title="Git" class="md-nav__link">
+    Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" title="Docker" class="md-nav__link">
+    Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Incidencias
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Incidencias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Incidencias/30-04-2019/" title="Restaurar contraseña WS" class="md-nav__link">
+      Restaurar contraseña WS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iniciando-la-implementacion" title="Iniciando la implementación" class="md-nav__link">
+    Iniciando la implementación
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git" title="Git" class="md-nav__link">
+    Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" title="Docker" class="md-nav__link">
+    Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/tzinm/Tipstabet/edit/master/docs/Herramientas/Github.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="github-pages">GitHub Pages<a class="headerlink" href="#github-pages" title="Permanent link">#</a></h1>
+<p>Para dejar el contenido desarrollado público, hemos optado por utilizar la herramienta <strong>GitHub Pages</strong> que nos proporciona <strong>GitHub</strong>.</p>
+<p><strong>¿Qué es GitHub?</strong></p>
+<p>Es una web que implementa el control de versiones, y que permite mantener proyectos públicos de forma gratuita alojados en dicha web.</p>
+<p><strong>¿Qué es GitHub Pages?</strong></p>
+<p>Es una herramienta sencilla que ofrece <strong>GitHub</strong> para alojar una página web. Es similar a un servicio de hosting.</p>
+<p>GitHub Pages nos ofrece <a href="https://pages.github.com">dos alternativas</a> para la creación de páginas web.</p>
+<ul>
+<li><strong>GitHub account:</strong> en este caso sólo disponemos de una única página web que va a asociada a nuestro nombre de usuario. Si nuestro nombre de usuarios es <strong>sfera</strong>, nuestra página web deberá ser <strong>sfera.github.io</strong>. </li>
+<li><strong>Project Site:</strong> cuando hablamos de este tipo de webs, disponemos de <em>sites</em> ilimitados. Siguiendo con el ejemplo anterior, el dominio principal será <strong>sfera.github.io</strong>, finalizando con <strong>/nombre_del_proyecto</strong>. Por lo tanto, si nuestro proyecto es <strong>tipstabet</strong>, el dominio completo sería <strong>sfera.github.io/tipstabet</strong>.</li>
+</ul>
+<p>Hemos optador por crear un <strong>Project Site</strong> puesto que nos posibilita en el futuro crear más páginas web de diferentes proyectos.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El dominio de nuestra página web se puede personalizar. Podemos seguir <a href="https://help.github.com/en/articles/using-a-custom-domain-with-github-pages">este enlace</a> donde se explica como realizar este proceso.</p>
+</div>
+<h2 id="iniciando-la-implementacion">Iniciando la implementación<a class="headerlink" href="#iniciando-la-implementacion" title="Permanent link">#</a></h2>
+<p>Durante el proyecto la documentación se ha implementado con la herramienta <strong>MkDocs</strong>. Se ha desarrollado de forma local en una <strong>Raspberry pi</strong> y utilizando dicho dispositivo para alojarlo en su servidor <strong>Nginx</strong>. </p>
+<p>Para publicarlo en GitHub disponemos de dos opciones, una siguiendo <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/#github-pages">esta guía</a> conservando el tema utilizado inicialmente (<a href="https://www.mkdocs.org/user-guide/deploying-your-docs/#read-the-docs">Read the Docs</a>), y otra segunda opción utilizando el tema <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>.</p>
+<p>Finalmente hemos decidido cambiar a esta segunda opción puesto que dispone de mayores configuraciones a través del fichero <strong>mkdocs.yml</strong> y una mejor adaptación visual en los diferentes dispsitivos.</p>
+<p>Las herramientas utilizadas para llevar a cabo este proceso han sido varias. Por un lado hemos utilizado <a href="https://www.docker.com">Docker</a> para realizar diversas pruebas y llevar a cabo la implementación final, y por otro lado <a href="https://git-scm.com">Git</a> como herramienta de <strong>Control de Versiones</strong>.</p>
+<p>Ambas herramientas se encuentran disponibles para las principales plataformas (Linux, Windows y MacOS). Para esta parte del proyecto hemos utilizado un equipo con Sistema Operativo <strong>MacOS</strong>.</p>
+<ul>
+<li>
+<p><a href="https://docs.docker.com/v17.12/docker-for-mac/install/">Instalación de Docker en MacOS</a></p>
+</li>
+<li>
+<p><a href="https://www.atlassian.com/git/tutorials/install-git">Instalación de Git en MacOS</a></p>
+</li>
+</ul>
+<h3 id="git">Git<a class="headerlink" href="#git" title="Permanent link">#</a></h3>
+<p>Es la herramienta de Control de Versiones por excelencia. En el partado anterior hemos puesto un enlace donde encontraremos las guías para la instalación en las diferentes plataformas en las que se encuentra disponible.</p>
+<p>En primer lugar comprobaremos que tenemos <strong>Git</strong> instalado en nuestro sistema.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git --version
+</pre></div>
+</td></tr></table>
+
+<p>Una vez que verificamos que tenemos instalado procederemos a realizar las configuraciones globales, estableciendo un nombre de usuario y una cuenta de email que quedarán registradas cuando realicemos algún cambio en el repositorio.</p>
+<ul>
+<li>Configuración del nombre de usuario</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git config --global user.name <span class="s2">&quot;nombre&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>Configuración del email</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git config --global user.email <span class="s2">&quot;email&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>Listar los parámetros que hemos configurado</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git config --list
+</pre></div>
+</td></tr></table>
+
+<p>La forma de trabajar de Git es rastreando el <strong>Working Directory </strong> en busca de cambios que se hayan realizado, para ello es necesario indicarle que directorio tiene que rastrear. El comando para indicar a Git que queremos rastrear un directorio es el siguiente (debemos estar situados dentro del directorio que queremos que actue como <strong>Working Directory</strong>):</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git init
+</pre></div>
+</td></tr></table>
+
+<p>Si ejecutamos el comando <code>ls -la</code> veremos que aparece un directorio oculto denominado <strong>.git/</strong>, esto significa que se ha iniciado git correctamente.</p>
+<p>En el directorio que hemos iniciado git nos encontramos con lo siguiente:</p>
+<ul>
+<li>Directorio con la documentación</li>
+<li>Fichero <strong>mkdcos.yml</strong></li>
+<li>Directorio <strong>/site</strong> que contiene todos los ficheros generados por MkDcos para mostrar como página web.</li>
+</ul>
+<p>Todo lo anterior no queremos que se muestre en la rama principal de nuestro repositorio (branch/rama master). Git nos proporiciona una forma fácil de solucionarlo, un fichero denominado <strong>.gitignore</strong> que nos permite incluir tanto ficheros como directorios del <strong>Working Directory</strong> sobre los que no queremos que git lleve un control. A continuación podemos ver que hemos incluido dentro de este fichero.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#MacOS</span>
+.DS_Store
+
+<span class="c1">#Site to build</span>
+/site
+/docs
+mkdocs.yml
+</pre></div>
+</td></tr></table>
+
+<p>Nos quedan dos últimos pasos, añadir el repositorio remote y subir los ficheros que pertenecen a la rama master.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#Añadimos el repositorio remoto</span>
+git remote add origin repositorio_remoto
+
+<span class="c1">#Realizamos el commit sobre los ficheros de la rama master</span>
+git commit -am <span class="s2">&quot;Comentario&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>repositorio_remoto</strong> es la dirección que nos proporicona GitHub en formato ssh para conectarnos a él. Es necesario <a href="https://medium.com/@ancizj393/crear-una-clave-ssh-en-git-y-vincular-en-tu-cuenta-de-github-e7a6b22bc93f">configurar ssh</a>.</p>
+</div>
+<h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">#</a></h3>
+<p>Para implementar GitHub lo vamos a hacer a través de Docker. El desarrollador de este tema tiene un contenedor en el repositorio de Docker (<a href="https://hub.docker.com/r/squidfunk/mkdocs-material">Docker Hub</a>) que facilita todo el proceso para subir el contenido a nuestro repositorio remoto.</p>
+<p>En apartados anteriores hemos dejado un enlace a la instalación de Docker en MacOS. El proceso es muy sencillo, y al igual que sucede con <strong>Git</strong> podemos verificar si está correctamente instalado ejecutando el siguiente comando:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>docker --version
+</pre></div>
+</td></tr></table>
+
+<p>No vamos a entrar a ver con detalle el funcionamiento de Docker, es un servicio con multitud de opciones y comandos. La documentación oficial es muy amplia y podemos encontrar información y <a href="https://docs.docker.com/v17.12/get-started/">guías</a> sobre prácticamente todo lo que engloba Docker.</p>
+<p>Vamos a desglosar únicamente el comando que debemos ejecutar para poner en marcha nuestro proyecto. El comando es el siguiente:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>docker run --rm -it -v ~/.ssh:/root/.ssh -v ~/.gitconfig:/root/.gitconfig ~/tipstabet:/docs squidfunk/mkdocs-material gh-deploy -m <span class="s2">&quot;Comentario&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>
+<p><strong>docker run:</strong> comando utilizado para crear contenedores a partir de una imagen.</p>
+</li>
+<li>
+<p><strong>--rm:</strong> comprueba si existe el mismo contenedor, y si es así lo elimina.</p>
+</li>
+<li>
+<p><strong>-it:</strong> los contenedores necesitan una capa llamada <strong>CMD</strong> para que el contenedor pueda funcionar. Otra forma de hacerlo es con esta opción, que mantiene una <strong>tty</strong> interactiva.</p>
+</li>
+<li>
+<p><strong>-v:</strong> hace referencia a los volúmenes de Docker. Su cometido (en este caso) es compartir ficheros de la máquina anfitrión con el contenedor. La ruta que se establece al a izquierda de los <code>:</code> es la de nuestra máquina local, y a su derecha es la ruta dentro del contenedor en Docker.</p>
+</li>
+<li>
+<p><strong>squidfunk/mkdocs:</strong> es la imagen utilizada. En caso de que no la tengamos descargada previamente, la ejecución del comando <code>docker run</code> se demorará porque la descargará.</p>
+</li>
+<li>
+<p><strong>~/.gitconfig:/root/.gitconfig</strong>: permite mostrar el usuario que ha hecho el commit.</p>
+</li>
+<li>
+<p><strong>~/tipstabet:/docs:</strong>  la ruta donde se encuentra la documentación en nuestra máquina. </p>
+</li>
+<li>
+<p><strong>~/.ssh:/root/.ssh:</strong> la ruta donde se encuentra almacenada nuestras llaves ssh.donde.</p>
+</li>
+<li>
+<p><strong>gh-deploy</strong>: es una utilidad para realizar la implementación directa con GitHub. En este <a href="https://github.com/davisp/ghp-import">enlace</a> podemos encontrar más información sobre esta herramienta. </p>
+</li>
+<li><strong>-m "Comentario"</strong>: permite personalizar el comentario del commit.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>gh-deploy</strong> crea una rama nueva llamada <strong>gh-pages</strong> que es la que utiliza GitHub como hosting para después poder visualizar la página web correctamente. Con lo cual tendremos dos ramas, la rama master donde se encontrará el fichero <strong>.gitignore</strong> que hemos explicado anteriormente, y el fichero README.md que explica en que consiste el repositorio.</p>
+</div>
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Rclone/" title="Rclone" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Rclone
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../Incidencias/30-04-2019/" title="Restaurar contraseña WS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Restaurar contraseña WS
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 ASIR 1
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/tzinm" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/tzinm1" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
