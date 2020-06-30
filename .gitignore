@@ -1,7 +1,2 @@
 #MacOS
 .DS_Store
-
-#Site to build
-/site
-/docs
-mkdocs.yml

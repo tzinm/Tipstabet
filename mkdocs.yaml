@@ -1,0 +1,78 @@
+#Información sobre el proyecto
+site_name: TipsTaBet
+site_author: ASIR 1
+
+#Copyright
+copyright: "Copyright &copy; 2019 ASIR 1"
+
+#Información sobre el repositorio
+repo_name: 'tzinm/Tipstabet'
+repo_url: 'https://github.com/tzinm/Tipstabet'
+
+#Suprimir el icono de edición (https://www.mkdocs.org/user-guide/configuration/#edit_uri)
+edit_uri: ''
+
+#Tema utilizado, con configuraciones específicas, por ejemplo los lenguajes que interpretará para mostrar adecuadamente en las "cajas" de código.
+theme:
+ name: 'material'
+ language: 'es'
+ palette:
+   primary: 'indigo'
+   accent: 'indigo'
+ feature:
+   tabs: true
+ favicon: ./Imagenes/favicon.ico
+ logo:
+   icon: 'devices_other'
+ highlightjs: true
+ hljs_languages:
+  - bash
+  - powershell
+  - markdown
+  - yaml
+
+#Contenido extra
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/tzinm'
+    - type: 'twitter'
+      link: 'https://twitter.com/tzinm1'
+
+#Extensiones que añaden funciones extra, como por ejemplo links permanentes a los encabezados de diferentes niveles.
+markdown_extensions:
+ - codehilite:
+     linenums: true
+ - toc:
+    permalink: true
+    permalink: "#"
+ - admonition
+ - footnotes
+
+#Índice del contenido, nos permite organizarlo como deseemos
+pages:
+- Home: 'index.md'
+- Hardware:
+  - Fichas técnicas: ./Hardware/Fichas-tecnicas.md
+  - Rockstor: ./Hardware/Rockstor.md
+  - Raspberry Pi: ./Hardware/Raspberry-Pi.md
+  - Presupuesto Servidor: ./Hardware/Servidor.md
+  - Control de acceso: ./Hardware/Log.md
+  - Proyecto Celulosa: ./Hardware/Proyecto-Celulosa.md
+- Sistemas Operativos:
+  - Comandos de Administración: ./Sistemas-Operativos/Comandos-de-Administracion.md
+  - Punto de restauración: ./Sistemas-Operativos/Equipos-Clientes/Punto-de-Restauracion.md
+  - Imagen del Sistema: ./Sistemas-Operativos/Equipos-Clientes/Imagenes-del-Sistema.md
+  - Acceso Remoto: ./Sistemas-Operativos/Equipos-Clientes/Acceso-Remoto.md
+  - Unir Linux a Windows Server: ./Sistemas-Operativos/Equipos-Clientes/Dominio-linux.md
+- Administración de redes:
+  - Planificación de la red: ./Planificacion-Administracion-de-Redes/Red.md
+- Lenguaje de Marcas:
+  - Servidor Web: ./Lenguaje-de-Marcas/Tipstabet.md
+  - MkDocs: ./Lenguaje-de-Marcas/MkDocs.md
+  - Markdown: ./Lenguaje-de-Marcas/Markdown.md
+- Contenido extra:
+  - Easy2boot: ./Herramientas/Easy2boot.md
+  - Rclone: ./Herramientas/Rclone.md
+- Incidencias:
+  - Restaurar contraseña WS: ./Incidencias/30-04-2019.md
